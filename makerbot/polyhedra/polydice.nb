@@ -1,0 +1,1747 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     64980,       1738]
+NotebookOptionsPosition[     60616,       1589]
+NotebookOutlinePosition[     61467,       1620]
+CellTagsIndexPosition[     61339,       1614]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"PolyhedronData", "[", "\"\<Classes\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.553606187822003*^9, 3.553606195047124*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Amphichiral\"\>", ",", "\<\"Antiprism\"\>", 
+   ",", "\<\"Archimedean\"\>", ",", "\<\"ArchimedeanDual\"\>", 
+   ",", "\<\"Chiral\"\>", ",", "\<\"Compound\"\>", ",", "\<\"Concave\"\>", 
+   ",", "\<\"Convex\"\>", ",", "\<\"Cuboid\"\>", ",", "\<\"Deltahedron\"\>", 
+   ",", "\<\"Dipyramid\"\>", ",", "\<\"Equilateral\"\>", 
+   ",", "\<\"Hypercube\"\>", ",", "\<\"Isohedron\"\>", ",", "\<\"Johnson\"\>",
+    ",", "\<\"KeplerPoinsot\"\>", ",", "\<\"Orthotope\"\>", 
+   ",", "\<\"Platonic\"\>", ",", "\<\"PlatonicDual\"\>", ",", "\<\"Prism\"\>",
+    ",", "\<\"Pyramid\"\>", ",", "\<\"Quasiregular\"\>", 
+   ",", "\<\"RectangularParallelepiped\"\>", ",", "\<\"Rhombohedron\"\>", 
+   ",", "\<\"Rigid\"\>", ",", "\<\"SelfDual\"\>", ",", "\<\"Shaky\"\>", 
+   ",", "\<\"Simplex\"\>", ",", "\<\"SpaceFilling\"\>", 
+   ",", "\<\"Stellation\"\>", ",", "\<\"Uniform\"\>", 
+   ",", "\<\"UniformDual\"\>", ",", "\<\"Zonohedron\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.553606195579029*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolyhedronData", "[", "\"\<Archimedean\>\"", "]"}]], "Input",
+ CellChangeTimes->{{3.5536062130059566`*^9, 3.553606227838305*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Cuboctahedron\"\>", ",", "\<\"GreatRhombicosidodecahedron\"\>",
+    ",", "\<\"GreatRhombicuboctahedron\"\>", ",", "\<\"Icosidodecahedron\"\>",
+    ",", "\<\"SmallRhombicosidodecahedron\"\>", 
+   ",", "\<\"SmallRhombicuboctahedron\"\>", ",", "\<\"SnubCube\"\>", 
+   ",", "\<\"SnubDodecahedron\"\>", ",", "\<\"TruncatedCube\"\>", 
+   ",", "\<\"TruncatedDodecahedron\"\>", ",", "\<\"TruncatedIcosahedron\"\>", 
+   ",", "\<\"TruncatedOctahedron\"\>", ",", "\<\"TruncatedTetrahedron\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.553606228453529*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Map", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"PolyhedronData", "[", "#", "]"}], " ", "&"}], " ", ",", " ", 
+   RowBox[{"PolyhedronData", "[", "\"\<Platonic\>\"", "]"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.553606253683463*^9, 3.553606305652227*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   Graphics3DBox[
+    GraphicsComplex3DBox[
+     NCache[{{Rational[-1, 2], Rational[-1, 2], Rational[-1, 2]}, {
+       Rational[-1, 2], Rational[-1, 2], Rational[1, 2]}, {
+       Rational[-1, 2], Rational[1, 2], Rational[-1, 2]}, {
+       Rational[-1, 2], Rational[1, 2], Rational[1, 2]}, {
+       Rational[1, 2], Rational[-1, 2], Rational[-1, 2]}, {
+       Rational[1, 2], Rational[-1, 2], Rational[1, 2]}, {
+       Rational[1, 2], Rational[1, 2], Rational[-1, 2]}, {
+       Rational[1, 2], Rational[1, 2], Rational[
+        1, 2]}}, {{-0.5, -0.5, -0.5}, {-0.5, -0.5, 0.5}, {-0.5, 
+      0.5, -0.5}, {-0.5, 0.5, 0.5}, {0.5, -0.5, -0.5}, {0.5, -0.5, 0.5}, {0.5,
+       0.5, -0.5}, {0.5, 0.5, 0.5}}], 
+     Polygon3DBox[{{8, 4, 2, 6}, {8, 6, 5, 7}, {8, 7, 3, 4}, {4, 3, 1, 2}, {1,
+       3, 7, 5}, {2, 1, 5, 6}}]]], ",", 
+   Graphics3DBox[
+    GraphicsComplex3DBox[
+     NCache[{{-(1 + 2 5^Rational[-1, 2])^Rational[1, 2], 0, Root[
+        1 - 20 #^2 + 80 #^4& , 3, 0]}, {(1 + 2 5^Rational[-1, 2])^
+        Rational[1, 2], 0, Root[1 - 20 #^2 + 80 #^4& , 2, 0]}, {
+       Root[1 - 20 #^2 + 80 #^4& , 1, 0], 
+        Rational[1, 4] (-3 - 5^Rational[1, 2]), Root[
+        1 - 20 #^2 + 80 #^4& , 3, 0]}, {
+       Root[1 - 20 #^2 + 80 #^4& , 1, 0], 
+        Rational[1, 4] (3 + 5^Rational[1, 2]), Root[
+        1 - 20 #^2 + 80 #^4& , 3, 0]}, {(Rational[5, 8] + 
+         Rational[11, 8] 5^Rational[-1, 2])^Rational[1, 2], 
+        Rational[1, 4] (-1 - 5^Rational[1, 2]), Root[
+        1 - 20 #^2 + 80 #^4& , 3, 0]}, {(Rational[5, 8] + 
+         Rational[11, 8] 5^Rational[-1, 2])^Rational[1, 2], 
+        Rational[1, 4] (1 + 5^Rational[1, 2]), Root[
+        1 - 20 #^2 + 80 #^4& , 3, 0]}, {
+       Root[1 - 20 #^2 + 80 #^4& , 2, 0], 
+        Rational[1, 4] (-1 - 5^Rational[1, 2]), (Rational[5, 8] + 
+         Rational[11, 8] 5^Rational[-1, 2])^Rational[1, 2]}, {
+       Root[1 - 20 #^2 + 80 #^4& , 2, 0], 
+        Rational[1, 4] (1 + 5^Rational[1, 2]), (Rational[5, 8] + 
+         Rational[11, 8] 5^Rational[-1, 2])^Rational[1, 2]}, {
+       Rational[-1, 2] (1 + 2 5^Rational[-1, 2])^Rational[1, 2], 
+        Rational[-1, 2], Root[1 - 100 #^2 + 80 #^4& , 1, 0]}, {
+       Rational[-1, 2] (1 + 2 5^Rational[-1, 2])^Rational[1, 2], Rational[
+        1, 2], Root[
+        1 - 100 #^2 + 80 #^4& , 1, 0]}, {(Rational[1, 4] + 
+         Rational[1, 2] 5^Rational[-1, 2])^Rational[1, 2], 
+        Rational[-1, 2], (Rational[5, 8] + Rational[11, 8] 5^Rational[-1, 2])^
+        Rational[1, 2]}, {(Rational[1, 4] + Rational[1, 2] 5^Rational[-1, 2])^
+        Rational[1, 2], Rational[
+        1, 2], (Rational[5, 8] + Rational[11, 8] 5^Rational[-1, 2])^
+        Rational[1, 2]}, {(Rational[1, 10] (5 + 5^Rational[1, 2]))^
+        Rational[1, 2], 0, Root[1 - 100 #^2 + 80 #^4& , 1, 0]}, {
+       Root[1 - 100 #^2 + 80 #^4& , 1, 0], 
+        Rational[1, 4] (-1 - 5^Rational[1, 2]), Root[
+        1 - 20 #^2 + 80 #^4& , 2, 0]}, {
+       Root[1 - 100 #^2 + 80 #^4& , 1, 0], 
+        Rational[1, 4] (1 + 5^Rational[1, 2]), Root[
+        1 - 20 #^2 + 80 #^4& , 2, 0]}, {
+       Root[1 - 5 #^2 + 5 #^4& , 1, 0], 
+        0, (Rational[5, 8] + Rational[11, 8] 5^Rational[-1, 2])^
+        Rational[1, 2]}, {
+       Root[1 - 20 #^2 + 80 #^4& , 3, 0], 
+        Rational[1, 4] (-1 - 5^Rational[1, 2]), Root[
+        1 - 100 #^2 + 80 #^4& , 1, 0]}, {
+       Root[1 - 20 #^2 + 80 #^4& , 3, 0], 
+        Rational[1, 4] (1 + 5^Rational[1, 2]), Root[
+        1 - 100 #^2 + 80 #^4& , 1, 0]}, {(Rational[1, 8] + 
+         Rational[1, 8] 5^Rational[-1, 2])^Rational[1, 2], 
+        Rational[1, 4] (-3 - 5^Rational[1, 2]), Root[
+        1 - 20 #^2 + 80 #^4& , 2, 0]}, {(Rational[1, 8] + 
+         Rational[1, 8] 5^Rational[-1, 2])^Rational[1, 2], 
+        Rational[1, 4] (3 + 5^Rational[1, 2]), Root[
+        1 - 20 #^2 + 80 #^4& , 2, 0]}}, {{-1.3763819204711736`, 0, 
+        0.2628655560595668}, {
+       1.3763819204711736`, 
+        0, -0.2628655560595668}, {-0.42532540417601994`, -1.3090169943749475`,
+        0.2628655560595668}, {-0.42532540417601994`, 1.3090169943749475`, 
+       0.2628655560595668}, {1.1135163644116066`, -0.8090169943749475, 
+       0.2628655560595668}, {1.1135163644116066`, 0.8090169943749475, 
+       0.2628655560595668}, {-0.2628655560595668, -0.8090169943749475, 
+       1.1135163644116066`}, {-0.2628655560595668, 0.8090169943749475, 
+       1.1135163644116066`}, {-0.6881909602355868, -0.5, \
+-1.1135163644116068`}, {-0.6881909602355868, 0.5, -1.1135163644116068`}, {
+       0.6881909602355868, -0.5, 1.1135163644116066`}, {0.6881909602355868, 
+       0.5, 1.1135163644116066`}, {
+       0.85065080835204, 
+        0, -1.1135163644116068`}, {-1.1135163644116068`, -0.8090169943749475, \
+-0.2628655560595668}, {-1.1135163644116068`, 
+       0.8090169943749475, -0.2628655560595668}, {-0.85065080835204, 0, 
+        1.1135163644116066`}, {
+       0.2628655560595668, -0.8090169943749475, -1.1135163644116068`}, {
+       0.2628655560595668, 0.8090169943749475, -1.1135163644116068`}, {
+       0.42532540417601994`, -1.3090169943749475`, -0.2628655560595668}, {
+       0.42532540417601994`, 1.3090169943749475`, -0.2628655560595668}}], 
+     Polygon3DBox[{{15, 10, 9, 14, 1}, {2, 6, 12, 11, 5}, {5, 11, 7, 3, 19}, {
+      11, 12, 8, 16, 7}, {12, 6, 20, 4, 8}, {6, 2, 13, 18, 20}, {2, 5, 19, 17,
+       13}, {4, 20, 18, 10, 15}, {18, 13, 17, 9, 10}, {17, 19, 3, 14, 9}, {3, 
+      7, 16, 1, 14}, {16, 8, 4, 15, 1}}]]], ",", 
+   Graphics3DBox[
+    GraphicsComplex3DBox[
+     NCache[{{0, 0, (-5) (50 - 10 5^Rational[1, 2])^Rational[-1, 2]}, {
+       0, 0, 5 (50 - 10 5^Rational[1, 2])^
+         Rational[-1, 2]}, {-(2/(5 - 5^Rational[1, 2]))^Rational[1, 2], 
+        0, -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {(2/(5 - 5^
+         Rational[1, 2]))^Rational[1, 2], 0, (10 - 2 5^Rational[1, 2])^
+        Rational[-1, 2]}, {
+       Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+         5^Rational[1, 2]), 
+        Rational[-1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+       Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+         5^Rational[1, 2]), Rational[
+        1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+       Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+         5^Rational[1, 2]), Rational[-1, 2], (10 - 2 5^Rational[1, 2])^
+        Rational[-1, 2]}, {
+       Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (1 + 
+         5^Rational[1, 2]), Rational[1, 2], (10 - 2 5^Rational[1, 2])^
+        Rational[-1, 2]}, {
+       Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+         5^Rational[1, 2]), 
+        Rational[-1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+         Rational[1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+       Rational[-1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+         5^Rational[1, 2]), 
+        Rational[1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+         Rational[1, 2], -(10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+       Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+         5^Rational[1, 2]), 
+        Rational[-1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+         Rational[1, 2], (10 - 2 5^Rational[1, 2])^Rational[-1, 2]}, {
+       Rational[1, 2] (10 - 2 5^Rational[1, 2])^Rational[-1, 2] (-1 + 
+         5^Rational[1, 2]), 
+        Rational[1, 2] ((5 - 5^Rational[1, 2])^(-1) (5 + 5^Rational[1, 2]))^
+         Rational[1, 2], (10 - 2 5^Rational[1, 2])^Rational[-1, 2]}}, {{
+       0, 0, -0.9510565162951536}, {
+       0, 0, 0.9510565162951536}, {-0.85065080835204, 
+        0, -0.42532540417601994`}, {
+       0.85065080835204, 0, 0.42532540417601994`}, {
+       0.6881909602355868, -0.5, -0.42532540417601994`}, {0.6881909602355868, 
+       0.5, -0.42532540417601994`}, {-0.6881909602355868, -0.5, 
+       0.42532540417601994`}, {-0.6881909602355868, 0.5, 
+       0.42532540417601994`}, {-0.2628655560595668, -0.8090169943749475, \
+-0.42532540417601994`}, {-0.2628655560595668, 
+       0.8090169943749475, -0.42532540417601994`}, {
+       0.2628655560595668, -0.8090169943749475, 0.42532540417601994`}, {
+       0.2628655560595668, 0.8090169943749475, 0.42532540417601994`}}], 
+     Polygon3DBox[{{2, 12, 8}, {2, 8, 7}, {2, 7, 11}, {2, 11, 4}, {2, 4, 
+      12}, {5, 9, 1}, {6, 5, 1}, {10, 6, 1}, {3, 10, 1}, {9, 3, 1}, {12, 10, 
+      8}, {8, 3, 7}, {7, 9, 11}, {11, 5, 4}, {4, 6, 12}, {5, 11, 9}, {6, 4, 
+      5}, {10, 12, 6}, {3, 8, 10}, {9, 7, 3}}]]], ",", 
+   Graphics3DBox[
+    GraphicsComplex3DBox[
+     NCache[{{-2^Rational[-1, 2], 0, 0}, {0, 2^Rational[-1, 2], 0}, {
+       0, 0, -2^Rational[-1, 2]}, {0, 0, 2^Rational[-1, 2]}, {
+       0, -2^Rational[-1, 2], 0}, {
+       2^Rational[-1, 2], 0, 0}}, {{-0.7071067811865475, 0, 0}, {
+       0, 0.7071067811865475, 0}, {0, 0, -0.7071067811865475}, {
+       0, 0, 0.7071067811865475}, {0, -0.7071067811865475, 0}, {
+       0.7071067811865475, 0, 0}}], 
+     Polygon3DBox[{{4, 5, 6}, {4, 6, 2}, {4, 2, 1}, {4, 1, 5}, {5, 1, 3}, {5, 
+      3, 6}, {3, 1, 2}, {6, 3, 2}}]]], ",", 
+   Graphics3DBox[
+    GraphicsComplex3DBox[
+     NCache[{{0, 0, Rational[2, 3]^Rational[1, 2] + 
+        Rational[-1, 2] 6^Rational[-1, 2]}, {
+       Rational[-1, 2] 3^Rational[-1, 2], Rational[-1, 2], Rational[-1, 2] 
+        6^Rational[-1, 2]}, {
+       Rational[-1, 2] 3^Rational[-1, 2], Rational[1, 2], Rational[-1, 2] 
+        6^Rational[-1, 2]}, {
+       3^Rational[-1, 2], 0, Rational[-1, 2] 6^Rational[-1, 2]}}, {{
+       0, 0, 0.6123724356957945}, {-0.2886751345948129, -0.5, \
+-0.20412414523193154`}, {-0.2886751345948129, 0.5, -0.20412414523193154`}, {
+       0.5773502691896258, 0, -0.20412414523193154`}}], 
+     Polygon3DBox[{{2, 3, 4}, {3, 2, 1}, {4, 1, 2}, {1, 4, 3}}]]]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.553606306117923*^9}]
+}, Open  ]],
+
+Cell["\<\
+What we want to do is have a function that takes a class of Polyhedron and a \
+bounding sphere radius, and outputs everything needed to create stl files of \
+each of those polyhedra that fit into a bounding sphere of the given size.  \
+Think creating dice that are all approximately the same size.
+
+Output will be in the form of a base stl file (with unit side length), an \
+openscad script that takes an arbitrary STL file, renders it, and enlarges \
+it, and a makefile that will use OpenSCAD to resize the shapes.
+
+On second thought, why not just do this in mathematica?  Sigh.\
+\>", "Text",
+ CellChangeTimes->{{3.5536063572338943`*^9, 3.553606489477764*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"f1", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"PolyhedronData", "[", 
+    RowBox[{"\"\<Tetrahedron\>\"", ",", " ", "\"\<Faces\>\""}], "]"}], " ", 
+   "[", 
+   RowBox[{"[", "1", "]"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"f2", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"PolyhedronData", "[", 
+    RowBox[{"\"\<Tetrahedron\>\"", ",", " ", "\"\<Faces\>\""}], "]"}], " ", 
+   "[", 
+   RowBox[{"[", "2", "]"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.553606497593354*^9, 3.553606505446149*^9}, {
+  3.553606584180634*^9, 3.553606651122129*^9}, {3.5536067443283777`*^9, 
+  3.553606765198793*^9}, {3.553606853661112*^9, 3.553606854028346*^9}, {
+  3.55360694717771*^9, 3.55360696172957*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", 
+     RowBox[{
+      SqrtBox[
+       FractionBox["2", "3"]], "-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["6"]}]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["3"]}]]}], ",", 
+     RowBox[{"-", 
+      FractionBox["1", "2"]}], ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["6"]}]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["3"]}]]}], ",", 
+     FractionBox["1", "2"], ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["6"]}]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     FractionBox["1", 
+      SqrtBox["3"]], ",", "0", ",", 
+     RowBox[{"-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["6"]}]]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.553606505832979*^9, {3.553606588407585*^9, 3.5536066515624123`*^9}, {
+   3.553606745515025*^9, 3.553606765870215*^9}, 3.553606854476087*^9, 
+   3.553606962168311*^9}],
+
+Cell[BoxData[
+ RowBox[{"Polygon", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"2", ",", "3", ",", "4"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"3", ",", "2", ",", "1"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"4", ",", "1", ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "4", ",", "3"}], "}"}]}], "}"}], "]"}]], "Output",
+ CellChangeTimes->{
+  3.553606505832979*^9, {3.553606588407585*^9, 3.5536066515624123`*^9}, {
+   3.553606745515025*^9, 3.553606765870215*^9}, 3.553606854476087*^9, 
+   3.553606962169538*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"f1", " ", "+", " ", "3"}]], "Input",
+ CellChangeTimes->{{3.553607035013295*^9, 3.553607036502836*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"3", ",", "3", ",", 
+     RowBox[{"3", "+", 
+      SqrtBox[
+       FractionBox["2", "3"]], "-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["6"]}]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"3", "-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["3"]}]]}], ",", 
+     FractionBox["5", "2"], ",", 
+     RowBox[{"3", "-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["6"]}]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"3", "-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["3"]}]]}], ",", 
+     FractionBox["7", "2"], ",", 
+     RowBox[{"3", "-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["6"]}]]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"3", "+", 
+      FractionBox["1", 
+       SqrtBox["3"]]}], ",", "3", ",", 
+     RowBox[{"3", "-", 
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        SqrtBox["6"]}]]}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.55360703693827*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", ".7", "]"}], ",", 
+    RowBox[{"Sphere", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", ".61"}], "]"}], ",", 
+    RowBox[{"GraphicsComplex", "[", 
+     RowBox[{"f1", ",", "f2"}], "]"}], ",", 
+    RowBox[{"GraphicsComplex", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"f1", " ", "*", " ", "2"}], " ", "+", " ", "1"}], ",", " ", 
+      "f2"}], "]"}]}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.553606965812705*^9, 3.5536069777765617`*^9}, {
+  3.553607020072554*^9, 3.553607081398134*^9}, {3.553610179013483*^9, 
+  3.5536102288202667`*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[
+  {Opacity[0.7], SphereBox[{0, 0, 0}, 0.61], 
+   GraphicsComplex3DBox[
+    NCache[{{0, 0, Rational[2, 3]^Rational[1, 2] + 
+       Rational[-1, 2] 6^Rational[-1, 2]}, {
+      Rational[-1, 2] 3^Rational[-1, 2], Rational[-1, 2], Rational[-1, 2] 
+       6^Rational[-1, 2]}, {
+      Rational[-1, 2] 3^Rational[-1, 2], Rational[1, 2], Rational[-1, 2] 
+       6^Rational[-1, 2]}, {
+      3^Rational[-1, 2], 0, Rational[-1, 2] 6^Rational[-1, 2]}}, {{
+      0, 0, 0.6123724356957945}, {-0.2886751345948129, -0.5, \
+-0.20412414523193154`}, {-0.2886751345948129, 0.5, -0.20412414523193154`}, {
+      0.5773502691896258, 0, -0.20412414523193154`}}], 
+    Polygon3DBox[{{2, 3, 4}, {3, 2, 1}, {4, 1, 2}, {1, 4, 3}}]], 
+   GraphicsComplex3DBox[
+    NCache[{{1, 1, 1 + 
+       2 (Rational[2, 3]^Rational[1, 2] + 
+         Rational[-1, 2] 6^Rational[-1, 2])}, {
+      1 - 3^Rational[-1, 2], 0, 1 - 6^Rational[-1, 2]}, {
+      1 - 3^Rational[-1, 2], 2, 1 - 6^Rational[-1, 2]}, {
+      1 + 2 3^Rational[-1, 2], 1, 1 - 6^Rational[-1, 2]}}, {{
+      1, 1, 2.224744871391589}, {
+      0.42264973081037416`, 0, 0.5917517095361369}, {
+      0.42264973081037416`, 2, 0.5917517095361369}, {
+      2.1547005383792515`, 1, 0.5917517095361369}}], 
+    Polygon3DBox[{{2, 3, 4}, {3, 2, 1}, {4, 1, 2}, {1, 4, 3}}]]},
+  AutomaticImageSize->True,
+  ImageSize->{348.602055807358, 351.5651559449601},
+  ViewPoint->{0.2033967448645195, -3.324535423750916, 0.5967361061674065},
+  ViewVertical->{0.11653471121959139`, -0.43749893943300033`, 
+   0.9081982902102219}]], "Output",
+ CellChangeTimes->{{3.553606972077764*^9, 3.5536069781978197`*^9}, {
+   3.553607023149581*^9, 3.553607081774918*^9}, 3.553610184715645*^9, {
+   3.553610217689345*^9, 3.553610229353867*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"??", "GraphicsComplex"}]], "Input",
+ CellChangeTimes->{{3.5536069868667088`*^9, 3.553606989360149*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"GraphicsComplex\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{SubscriptBox[StyleBox[\\\"pt\\\", \\\"TI\\\
+\"], StyleBox[\\\"1\\\", \\\"TR\\\"]], \\\",\\\", \
+SubscriptBox[StyleBox[\\\"pt\\\", \\\"TI\\\"], StyleBox[\\\"2\\\", \
+\\\"TR\\\"]], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\
+\"}], \\\",\\\", StyleBox[\\\"data\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) \
+represents a graphics complex in which coordinates given as integers \
+\\!\\(\\*StyleBox[\\\"i\\\", \\\"TI\\\"]\\) in graphics primitives in \
+\\!\\(\\*StyleBox[\\\"data\\\", \\\"TI\\\"]\\) are taken to be \
+\\!\\(\\*SubscriptBox[StyleBox[\\\"pt\\\", \\\"TI\\\"], StyleBox[\\\"i\\\", \
+\\\"TI\\\"]]\\). \"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/GraphicsComplex"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.553606990135983*^9},
+ CellTags->"Info3553588989-8649391"],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{"Attributes", "[", "GraphicsComplex", "]"}], "=", 
+      RowBox[{"{", 
+       RowBox[{"NHoldRest", ",", "Protected", ",", "ReadProtected"}], "}"}]}]},
+    {" "},
+    {GridBox[{
+       {
+        RowBox[{
+         RowBox[{"Options", "[", "GraphicsComplex", "]"}], "=", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"ContentSelectable", "\[Rule]", "Automatic"}], ",", 
+           RowBox[{"VertexColors", "\[Rule]", "Automatic"}], ",", 
+           RowBox[{"VertexNormals", "\[Rule]", "Automatic"}], ",", 
+           RowBox[{"VertexTextureCoordinates", "\[Rule]", "None"}]}], 
+          "}"}]}]}
+      },
+      BaselinePosition->{Baseline, {1, 1}},
+      GridBoxAlignment->{
+       "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+        "RowsIndexed" -> {}},
+      GridBoxItemSize->{"Columns" -> {{
+           Scaled[0.999]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+        "RowsIndexed" -> {}}]}
+   },
+   BaselinePosition->{Baseline, {1, 1}},
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}}],
+  Definition[GraphicsComplex],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.553606990379211*^9},
+ CellTags->"Info3553588989-8649391"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"PolyhedronData", "[", 
+  RowBox[{"\"\<Tetrahedron\>\"", ",", " ", "\"\<Faces\>\""}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.553610442677761*^9, 3.55361044632551*^9}}],
+
+Cell[BoxData[
+ RowBox[{"GraphicsComplex", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", 
+       RowBox[{
+        SqrtBox[
+         FractionBox["2", "3"]], "-", 
+        FractionBox["1", 
+         RowBox[{"2", " ", 
+          SqrtBox["6"]}]]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", 
+         RowBox[{"2", " ", 
+          SqrtBox["3"]}]]}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         RowBox[{"2", " ", 
+          SqrtBox["6"]}]]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", 
+         RowBox[{"2", " ", 
+          SqrtBox["3"]}]]}], ",", 
+       FractionBox["1", "2"], ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         RowBox[{"2", " ", 
+          SqrtBox["6"]}]]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", 
+        SqrtBox["3"]], ",", "0", ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         RowBox[{"2", " ", 
+          SqrtBox["6"]}]]}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"Polygon", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3", ",", "4"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "2", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"4", ",", "1", ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "4", ",", "3"}], "}"}]}], "}"}], "]"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.553610446740471*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Clear", "[", "f", "]"}]], "Input",
+ CellChangeTimes->{{3.5536104694668922`*^9, 3.5536104789805927`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"MapAt", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Times", "[", 
+     RowBox[{"#", ",", "2"}], "]"}], "&"}], ",", 
+   RowBox[{"PolyhedronData", "[", 
+    RowBox[{"\"\<Tetrahedron\>\"", ",", " ", "\"\<Faces\>\""}], "]"}], ",", 
+   RowBox[{"{", "1", "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.553606655323098*^9, 3.553606658545649*^9}, {
+  3.5536068593318567`*^9, 3.553606905514597*^9}, {3.553610331665679*^9, 
+  3.553610332968676*^9}, {3.553610401495739*^9, 3.553610428926325*^9}, {
+  3.553610529884235*^9, 3.553610538123214*^9}}],
+
+Cell[BoxData[
+ RowBox[{"GraphicsComplex", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SqrtBox[
+           FractionBox["2", "3"]], "-", 
+          FractionBox["1", 
+           RowBox[{"2", " ", 
+            SqrtBox["6"]}]]}], ")"}]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["3"]]}], ",", 
+       RowBox[{"-", "1"}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["6"]]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["3"]]}], ",", "1", ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["6"]]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["2", 
+        SqrtBox["3"]], ",", "0", ",", 
+       RowBox[{"-", 
+        FractionBox["1", 
+         SqrtBox["6"]]}]}], "}"}]}], "}"}], ",", 
+   RowBox[{"Polygon", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"2", ",", "3", ",", "4"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"3", ",", "2", ",", "1"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"4", ",", "1", ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "4", ",", "3"}], "}"}]}], "}"}], "]"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{
+  3.553606658963888*^9, {3.553606872025248*^9, 3.553606906249371*^9}, {
+   3.5536104104599953`*^9, 3.553610429344289*^9}, 3.553610482035729*^9, 
+   3.553610538806974*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"PolyhedronData", "[", 
+   RowBox[{"\"\<Cube\>\"", ",", " ", "\"\<Circumradius\>\""}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5536101089245996`*^9, 3.5536101429581127`*^9}, {
+  3.5536124644933777`*^9, 3.553612464980296*^9}}],
+
+Cell[BoxData["0.8660254037844386`"], "Output",
+ CellChangeTimes->{{3.553610123784676*^9, 3.553610143351759*^9}, 
+   3.55361246544846*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"PolyhedronData", "[", 
+   RowBox[{"\"\<Cube\>\"", ",", " ", "\"\<Faces\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.553612493256912*^9, 3.553612503123114*^9}}],
+
+Cell[BoxData[
+ RowBox[{"GraphicsComplex", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       FractionBox["1", "2"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       FractionBox["1", "2"], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       FractionBox["1", "2"], ",", 
+       FractionBox["1", "2"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", "2"], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", "2"], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}], ",", 
+       FractionBox["1", "2"]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", "2"], ",", 
+       FractionBox["1", "2"], ",", 
+       RowBox[{"-", 
+        FractionBox["1", "2"]}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       FractionBox["1", "2"], ",", 
+       FractionBox["1", "2"], ",", 
+       FractionBox["1", "2"]}], "}"}]}], "}"}], ",", 
+   RowBox[{"Polygon", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"8", ",", "4", ",", "2", ",", "6"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"8", ",", "6", ",", "5", ",", "7"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"8", ",", "7", ",", "3", ",", "4"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"4", ",", "3", ",", "1", ",", "2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "3", ",", "7", ",", "5"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2", ",", "1", ",", "5", ",", "6"}], "}"}]}], "}"}], "]"}]}], 
+  "]"}]], "Output",
+ CellChangeTimes->{3.553612503519438*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"??", "Module"}]], "Input",
+ CellChangeTimes->{{3.553609931745327*^9, 3.5536099328276176`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox["\<\"\\!\\(\\*RowBox[{\\\"Module\\\", \\\"[\\\", \
+RowBox[{RowBox[{\\\"{\\\", RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\"], \
+\\\",\\\", StyleBox[\\\"y\\\", \\\"TI\\\"], \\\",\\\", StyleBox[\\\"\
+\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\\\"}], \\\",\\\", \
+StyleBox[\\\"expr\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) specifies that \
+occurrences of the symbols \\!\\(\\*StyleBox[\\\"x\\\", \\\"TI\\\"]\\), \
+\\!\\(\\*StyleBox[\\\"y\\\", \\\"TI\\\"]\\), \[Ellipsis] in \
+\\!\\(\\*StyleBox[\\\"expr\\\", \\\"TI\\\"]\\) should be treated as local. \
+\\n\\!\\(\\*RowBox[{\\\"Module\\\", \\\"[\\\", RowBox[{RowBox[{\\\"{\\\", \
+RowBox[{RowBox[{StyleBox[\\\"x\\\", \\\"TI\\\"], \\\"=\\\", \
+SubscriptBox[StyleBox[\\\"x\\\", \\\"TI\\\"], StyleBox[\\\"0\\\", \
+\\\"TR\\\"]]}], \\\",\\\", StyleBox[\\\"\[Ellipsis]\\\", \\\"TR\\\"]}], \\\"}\
+\\\"}], \\\",\\\", StyleBox[\\\"expr\\\", \\\"TI\\\"]}], \\\"]\\\"}]\\) \
+defines initial values for \\!\\(\\*StyleBox[\\\"x\\\", \\\"TI\\\"]\\), \
+\[Ellipsis]. \"\>", "MSG"], "\[NonBreakingSpace]", 
+  ButtonBox[
+   StyleBox["\[RightSkeleton]", "SR"],
+   Active->True,
+   BaseStyle->"Link",
+   ButtonData->"paclet:ref/Module"]}]], "Print", "PrintUsage",
+ CellChangeTimes->{3.55360993325741*^9},
+ CellTags->"Info3553591933-8649391"],
+
+Cell[BoxData[
+ InterpretationBox[GridBox[{
+    {
+     RowBox[{
+      RowBox[{"Attributes", "[", "Module", "]"}], "=", 
+      RowBox[{"{", 
+       RowBox[{"HoldAll", ",", "Protected"}], "}"}]}]}
+   },
+   BaselinePosition->{Baseline, {1, 1}},
+   GridBoxAlignment->{
+    "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+     "RowsIndexed" -> {}}],
+  Definition[Module],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.5536099332854757`*^9},
+ CellTags->"Info3553591933-8649391"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"ScaledPolyhedron", "[", 
+    RowBox[{"poly_", ",", " ", "boundingradius_"}], "]"}], " ", ":=", " ", 
+   RowBox[{"Module", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"unitradius", " ", "=", " ", 
+       RowBox[{
+        RowBox[{"PolyhedronData", "[", 
+         RowBox[{"poly", ",", " ", "\"\<GeneralizedDiameter\>\""}], "]"}], 
+        "/", "2"}]}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"MapAt", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Times", "[", 
+         RowBox[{"#", ",", " ", 
+          RowBox[{"boundingradius", " ", "/", " ", "unitradius"}]}], "]"}], 
+        " ", "&"}], ",", 
+       RowBox[{"PolyhedronData", "[", 
+        RowBox[{"poly", ",", "\"\<Faces\>\""}], "]"}], ",", 
+       RowBox[{"{", "1", "}"}]}], "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"dir", " ", "=", " ", "\"\</Users/jmanton/polys/\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{"StringJoin", "[", 
+      RowBox[{"{", 
+       RowBox[{"dir", ",", "#", ",", "\"\<.stl\>\""}], "}"}], "]"}], ",", 
+     RowBox[{"ScaledPolyhedron", "[", 
+      RowBox[{"#", ",", " ", "5"}], "]"}]}], "]"}], " ", "&"}], " ", "/@", 
+  "  ", 
+  RowBox[{
+  "PolyhedronData", "[", "\"\<Platonic\>\"", 
+   "]"}]}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.553609776136498*^9, 3.553609780503417*^9}, {
+  3.553609818640027*^9, 3.553609840169133*^9}, {3.55360994391558*^9, 
+  3.553609945931765*^9}, {3.5536099773988037`*^9, 3.553610021521887*^9}, {
+  3.553610249564178*^9, 3.553610263571034*^9}, {3.553610598337532*^9, 
+  3.553610670647979*^9}, {3.5536107172708673`*^9, 3.553610735782424*^9}, {
+  3.553610859763769*^9, 3.5536108766973343`*^9}, {3.5536109137200813`*^9, 
+  3.55361103099092*^9}, {3.553613497913045*^9, 3.5536135037050962`*^9}, {
+  3.555438638560932*^9, 3.555438678832646*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Export", "::", "type"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(GraphicsComplex\\)\[NoBreak] cannot be \
+exported to the \[NoBreak]\\!\\(\\\"STL\\\"\\)\[NoBreak] format. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Export/type\\\", \
+ButtonNote -> \\\"Export::type\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.555438663759019*^9, 3.5554386811536503`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Export", "::", "type"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(GraphicsComplex\\)\[NoBreak] cannot be \
+exported to the \[NoBreak]\\!\\(\\\"STL\\\"\\)\[NoBreak] format. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Export/type\\\", \
+ButtonNote -> \\\"Export::type\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.555438663759019*^9, 3.555438681174325*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Export", "::", "type"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\(GraphicsComplex\\)\[NoBreak] cannot be \
+exported to the \[NoBreak]\\!\\(\\\"STL\\\"\\)\[NoBreak] format. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/Export/type\\\", \
+ButtonNote -> \\\"Export::type\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.555438663759019*^9, 3.555438681175885*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(Export :: \
+type\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{{3.555438663759019*^9, 3.555438681177352*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed", ",", "$Failed"}],
+   "}"}]], "Output",
+ CellChangeTimes->{{3.553610988946122*^9, 3.5536110318594646`*^9}, 
+   3.553613506738215*^9, 3.555438499373726*^9, {3.555438663812799*^9, 
+   3.555438681207362*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graphics3D", "[", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"Opacity", "[", ".6", "]"}], ",", 
+    RowBox[{"ScaledPolyhedron", "[", 
+     RowBox[{"\"\<Cube\>\"", ",", "18"}], "]"}], ",", " ", 
+    RowBox[{"Sphere", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "0", ",", "0"}], "}"}], ",", "18"}], "]"}]}], "}"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5536106770277557`*^9, 3.553610688398636*^9}, {
+  3.553610744901162*^9, 3.553610784811927*^9}, {3.5536129430314417`*^9, 
+  3.553612949694923*^9}, {3.555438565962089*^9, 3.555438566049178*^9}}],
+
+Cell[BoxData[
+ Graphics3DBox[
+  {Opacity[0.6], 
+   GraphicsComplex3DBox[
+    NCache[{{(-6) 3^Rational[1, 2], (-6) 3^Rational[1, 2], (-6) 
+       3^Rational[1, 2]}, {(-6) 3^Rational[1, 2], (-6) 3^Rational[1, 2], 6 
+       3^Rational[1, 2]}, {(-6) 3^Rational[1, 2], 6 3^Rational[1, 2], (-6) 
+       3^Rational[1, 2]}, {(-6) 3^Rational[1, 2], 6 3^Rational[1, 2], 6 
+       3^Rational[1, 2]}, {
+      6 3^Rational[1, 2], (-6) 3^Rational[1, 2], (-6) 3^Rational[1, 2]}, {
+      6 3^Rational[1, 2], (-6) 3^Rational[1, 2], 6 3^Rational[1, 2]}, {
+      6 3^Rational[1, 2], 6 3^Rational[1, 2], (-6) 3^Rational[1, 2]}, {
+      6 3^Rational[1, 2], 6 3^Rational[1, 2], 6 
+       3^Rational[
+         1, 2]}}, {{-10.392304845413264`, -10.392304845413264`, \
+-10.392304845413264`}, {-10.392304845413264`, -10.392304845413264`, 
+     10.392304845413264`}, {-10.392304845413264`, 
+     10.392304845413264`, -10.392304845413264`}, {-10.392304845413264`, 
+     10.392304845413264`, 10.392304845413264`}, {
+     10.392304845413264`, -10.392304845413264`, -10.392304845413264`}, {
+     10.392304845413264`, -10.392304845413264`, 10.392304845413264`}, {
+     10.392304845413264`, 10.392304845413264`, -10.392304845413264`}, {
+     10.392304845413264`, 10.392304845413264`, 10.392304845413264`}}], 
+    Polygon3DBox[{{8, 4, 2, 6}, {8, 6, 5, 7}, {8, 7, 3, 4}, {4, 3, 1, 2}, {1, 
+     3, 7, 5}, {2, 1, 5, 6}}]], SphereBox[{0, 0, 0}, 18]},
+  AutomaticImageSize->True,
+  ImageSize->{406.08989378322906`, 376.6807764858617},
+  ViewPoint->{-1.4707954518665014`, 2.9650086843627745`, 0.7039064145340198},
+  ViewVertical->{0.016241467510995783`, 0.4768084891421292, 
+   0.8788571439176504}]], "Output",
+ CellChangeTimes->{
+  3.5536106895159473`*^9, {3.553610721142663*^9, 3.553610785439975*^9}, 
+   3.553612950095742*^9, 3.55543856721791*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.553611285702524*^9, 3.553611310071478*^9}}],
+
+Cell["\<\
+A standard 6-sided die is 16mm on a side.  That translates into 16^3/10^3 =  \
+about 4.1cc of material, with a circumradius of \
+\>", "Text",
+ CellChangeTimes->{{3.553612552201027*^9, 3.553612576304173*^9}, {
+  3.553612637726619*^9, 3.553612683621277*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"16", " ", 
+   RowBox[{"PolyhedronData", "[", 
+    RowBox[{"\"\<Cube\>\"", ",", "\"\<Circumradius\>\""}], "]"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.553612590856875*^9, 3.553612617111841*^9}, {
+  3.553613080907246*^9, 3.553613086186747*^9}}],
+
+Cell[BoxData["13.856406460551018`"], "Output",
+ CellChangeTimes->{{3.553612611694488*^9, 3.5536126175267344`*^9}, {
+  3.553613082901598*^9, 3.553613087197497*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{
+   RowBox[{"16", "^", "3"}], " ", "/", " ", 
+   RowBox[{"10", "^", "3"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.553612652437961*^9, 3.553612660814505*^9}}],
+
+Cell[BoxData["4.096`"], "Output",
+ CellChangeTimes->{{3.553612656248271*^9, 3.553612661229293*^9}}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.553612626955371*^9, 3.553612629671236*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"dir", " ", "=", " ", "\"\</Users/jmanton/polys/\>\""}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"circumradius", " ", "=", " ", "1"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"#", ",", " ", 
+     RowBox[{"Export", "[", 
+      RowBox[{
+       RowBox[{"StringJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{"dir", ",", "#", ",", "\"\<.stl\>\""}], "}"}], "]"}], ",", 
+       " ", 
+       RowBox[{"Graphics3D", "[", 
+        RowBox[{"ScaledPolyhedron", "[", 
+         RowBox[{"#", ",", " ", "circumradius"}], "]"}], "]"}]}], "]"}]}], 
+    "}"}], " ", "&"}], " ", "/@", " ", 
+  RowBox[{"Join", "[", 
+   RowBox[{
+    RowBox[{"PolyhedronData", "[", "\"\<ArchimedeanDual\>\"", "]"}], ",", 
+    RowBox[{"PolyhedronData", "[", "\"\<Archimedean\>\"", "]"}], ",", 
+    RowBox[{"PolyhedronData", "[", "\"\<Platonic\>\"", "]"}]}], 
+   "]"}]}]}], "Input",
+ CellChangeTimes->{{3.55361107712633*^9, 3.553611129370644*^9}, {
+   3.553611206657728*^9, 3.553611214849427*^9}, {3.55361131149438*^9, 
+   3.553611409666298*^9}, {3.553611590862569*^9, 3.553611592604657*^9}, 
+   3.553611674620901*^9, {3.553612842090858*^9, 3.553612849859004*^9}, {
+   3.555438737765526*^9, 3.5554387438423147`*^9}, 3.555438927160657*^9, 
+   3.55543929186279*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"DeltoidalHexecontahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/DeltoidalHexecontahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DeltoidalIcositetrahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/DeltoidalIcositetrahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DisdyakisDodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/DisdyakisDodecahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DisdyakisTriacontahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/DisdyakisTriacontahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentagonalHexecontahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/PentagonalHexecontahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentagonalIcositetrahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/PentagonalIcositetrahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentakisDodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/PentakisDodecahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"RhombicDodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/RhombicDodecahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"RhombicTriacontahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/RhombicTriacontahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallTriakisOctahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/SmallTriakisOctahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TetrakisHexahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/TetrakisHexahedron.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TriakisIcosahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/TriakisIcosahedron.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TriakisTetrahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/TriakisTetrahedron.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Cuboctahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/Cuboctahedron.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"GreatRhombicosidodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/GreatRhombicosidodecahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"GreatRhombicuboctahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/GreatRhombicuboctahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Icosidodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/Icosidodecahedron.stl\"\>"}], "}"}], ",", 
+   
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallRhombicosidodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/SmallRhombicosidodecahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallRhombicuboctahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/SmallRhombicuboctahedron.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SnubCube\"\>", 
+     ",", "\<\"/Users/jmanton/polys/SnubCube.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SnubDodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/SnubDodecahedron.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedCube\"\>", 
+     ",", "\<\"/Users/jmanton/polys/TruncatedCube.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedDodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/TruncatedDodecahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedIcosahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/TruncatedIcosahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedOctahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/TruncatedOctahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedTetrahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/TruncatedTetrahedron.stl\"\>"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Cube\"\>", ",", "\<\"/Users/jmanton/polys/Cube.stl\"\>"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Dodecahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/Dodecahedron.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Icosahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/Icosahedron.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Octahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/Octahedron.stl\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tetrahedron\"\>", 
+     ",", "\<\"/Users/jmanton/polys/Tetrahedron.stl\"\>"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.5536111174937553`*^9, 3.553611129959696*^9}, 
+   3.5536112165375566`*^9, 3.553611411214817*^9, 3.5536115932924547`*^9, 
+   3.55361167542922*^9, 3.553612851328332*^9, 3.555438744707035*^9, {
+   3.55543893092276*^9, 3.5554389601594067`*^9}, 3.555439294438367*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"4", " ", "/", "3"}], " ", "Pi", " ", 
+  RowBox[{"13.8", "^", "3"}]}]], "Input",
+ CellChangeTimes->{{3.553611498432678*^9, 3.553611503831154*^9}, {
+  3.553613110234231*^9, 3.553613111170018*^9}}],
+
+Cell[BoxData["11008.44225107338`"], "Output",
+ CellChangeTimes->{3.5536115044499083`*^9, 3.5536131115297318`*^9}]
+}, Open  ]],
+
+Cell["\<\
+UnitRadiusVolume returns the volume of this type of polyhedron when \
+circumscribed in a unit sphere. \
+\>", "Text",
+ CellChangeTimes->{{3.553613671554347*^9, 3.553613708600111*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"UnitRadiusVolume", "[", "poly_", "]"}], " ", ":=", " ", 
+  RowBox[{"Module", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"rad", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"PolyhedronData", "[", 
+        RowBox[{"poly", ",", " ", "\"\<GeneralizedDiameter\>\""}], "]"}], "/",
+        "2"}]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"1", "/", "rad"}], ")"}], "^", "3"}], " ", 
+     RowBox[{"PolyhedronData", "[", 
+      RowBox[{"poly", ",", " ", "\"\<Volume\>\""}], "]"}]}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.5536136024090776`*^9, 3.5536136144837637`*^9}, {
+  3.553613734112378*^9, 3.553613780120718*^9}, {3.553613832413862*^9, 
+  3.55361385745359*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Join", "[", 
+  RowBox[{
+   RowBox[{"PolyhedronData", "[", "\"\<ArchimedeanDual\>\"", "]"}], ",", 
+   RowBox[{"PolyhedronData", "[", "\"\<Archimedean\>\"", "]"}], ",", 
+   RowBox[{"PolyhedronData", "[", "\"\<Platonic\>\"", "]"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.5554392563585167`*^9, 3.555439280706407*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"DeltoidalHexecontahedron\"\>", 
+   ",", "\<\"DeltoidalIcositetrahedron\"\>", 
+   ",", "\<\"DisdyakisDodecahedron\"\>", 
+   ",", "\<\"DisdyakisTriacontahedron\"\>", 
+   ",", "\<\"PentagonalHexecontahedron\"\>", 
+   ",", "\<\"PentagonalIcositetrahedron\"\>", 
+   ",", "\<\"PentakisDodecahedron\"\>", ",", "\<\"RhombicDodecahedron\"\>", 
+   ",", "\<\"RhombicTriacontahedron\"\>", 
+   ",", "\<\"SmallTriakisOctahedron\"\>", ",", "\<\"TetrakisHexahedron\"\>", 
+   ",", "\<\"TriakisIcosahedron\"\>", ",", "\<\"TriakisTetrahedron\"\>", 
+   ",", "\<\"Cuboctahedron\"\>", ",", "\<\"GreatRhombicosidodecahedron\"\>", 
+   ",", "\<\"GreatRhombicuboctahedron\"\>", ",", "\<\"Icosidodecahedron\"\>", 
+   ",", "\<\"SmallRhombicosidodecahedron\"\>", 
+   ",", "\<\"SmallRhombicuboctahedron\"\>", ",", "\<\"SnubCube\"\>", 
+   ",", "\<\"SnubDodecahedron\"\>", ",", "\<\"TruncatedCube\"\>", 
+   ",", "\<\"TruncatedDodecahedron\"\>", ",", "\<\"TruncatedIcosahedron\"\>", 
+   ",", "\<\"TruncatedOctahedron\"\>", ",", "\<\"TruncatedTetrahedron\"\>", 
+   ",", "\<\"Cube\"\>", ",", "\<\"Dodecahedron\"\>", 
+   ",", "\<\"Icosahedron\"\>", ",", "\<\"Octahedron\"\>", 
+   ",", "\<\"Tetrahedron\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.5554392525902557`*^9, 3.55543928219005*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Join", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"#", ",", " ", 
+       RowBox[{"N", "[", 
+        RowBox[{
+         RowBox[{"UnitRadiusVolume", "[", "#", "]"}], "/", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"4", "/", "3"}], " ", "*", " ", "Pi"}], ")"}]}], "]"}]}], 
+      "}"}], " ", "&"}], " ", "/@", " ", 
+    RowBox[{"PolyhedronData", "[", "\"\<ArchimedeanDual\>\"", "]"}]}], ",", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"#", ",", " ", 
+       RowBox[{"N", "[", 
+        RowBox[{
+         RowBox[{"UnitRadiusVolume", "[", "#", "]"}], "/", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"4", "/", "3"}], " ", "*", " ", "Pi"}], ")"}]}], "]"}]}], 
+      "}"}], " ", "&"}], " ", "/@", " ", 
+    RowBox[{"PolyhedronData", "[", "\"\<Archimedean\>\"", "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"#", ",", " ", 
+       RowBox[{"N", "[", 
+        RowBox[{
+         RowBox[{"UnitRadiusVolume", "[", "#", "]"}], "/", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"4", "/", "3"}], " ", "*", " ", "Pi"}], ")"}]}], "]"}]}], 
+      "}"}], " ", "&"}], " ", "/@", " ", 
+    RowBox[{"PolyhedronData", "[", "\"\<Platonic\>\"", "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.553613899228887*^9, 3.553613961883754*^9}, {
+  3.553614037057572*^9, 3.5536140457293377`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"DeltoidalHexecontahedron\"\>", ",", "0.8356610628240693`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DeltoidalIcositetrahedron\"\>", ",", "0.7385990154915926`"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DisdyakisDodecahedron\"\>", ",", "0.6191229004085876`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DisdyakisTriacontahedron\"\>", ",", "0.7737602433556194`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentagonalHexecontahedron\"\>", ",", "0.8201743258763945`"}],
+     "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentagonalIcositetrahedron\"\>", ",", 
+     "0.7046100547164258`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentakisDodecahedron\"\>", ",", "0.8151011772262011`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"RhombicDodecahedron\"\>", ",", "0.477464829275686`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"RhombicTriacontahedron\"\>", ",", "0.6937970081912099`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallTriakisOctahedron\"\>", ",", "0.3955448156842872`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TetrakisHexahedron\"\>", ",", "0.5513288954217921`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TriakisIcosahedron\"\>", ",", "0.6513011796030325`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TriakisTetrahedron\"\>", ",", "0.40514234227069773`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Cuboctahedron\"\>", ",", "0.5626976975981913`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"GreatRhombicosidodecahedron\"\>", ",", 
+     "0.8980438512868827`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"GreatRhombicuboctahedron\"\>", ",", "0.8015961005288668`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Icosidodecahedron\"\>", ",", "0.7797298183337492`"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallRhombicosidodecahedron\"\>", ",", 
+     "0.8923338664135814`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallRhombicuboctahedron\"\>", ",", "0.7598177184497348`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SnubCube\"\>", ",", "0.8029705604738894`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SnubDodecahedron\"\>", ",", "0.9071514713788662`"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedCube\"\>", ",", "0.5768207370889306`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedDodecahedron\"\>", ",", "0.775363423527975`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedIcosahedron\"\>", ",", "0.8674140234074154`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedOctahedron\"\>", ",", "0.68329204168049`"}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedTetrahedron\"\>", ",", "0.46302875136128074`"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Cube\"\>", ",", "0.36755259694786147`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Dodecahedron\"\>", ",", "0.6649088942053267`"}], "}"}], ",", 
+   
+   RowBox[{"{", 
+    RowBox[{"\<\"Icosahedron\"\>", ",", "0.6054613829125256`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Octahedron\"\>", ",", "0.3183098861837907`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Tetrahedron\"\>", ",", "0.22507907903927651`"}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.553613927882469*^9, 3.553613962950027*^9}, 
+   3.5536140462408*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"#", ",", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{
+       RowBox[{"PolyhedronData", "[", 
+        RowBox[{"#", ",", " ", "\"\<GeneralizedDiameter\>\""}], "]"}], "/", 
+       "2"}], "]"}], ",", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"PolyhedronData", "[", 
+       RowBox[{"#", ",", "\"\<Volume\>\""}], "]"}], "]"}]}], "}"}], " ", 
+   "&"}], " ", "/@", " ", 
+  RowBox[{"PolyhedronData", "[", "\"\<ArchimedeanDual\>\"", "]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.553613389402807*^9, 3.553613416377836*^9}, {
+  3.553613539913911*^9, 3.5536135759098988`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"DeltoidalHexecontahedron\"\>", ",", "2.849680384307678`", 
+     ",", "81.00414363537709`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DeltoidalIcositetrahedron\"\>", ",", "1.6892463972414664`", 
+     ",", "14.91338871378634`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DisdyakisDodecahedron\"\>", ",", "1.8450533546644432`", ",", 
+     "16.288919082923524`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"DisdyakisTriacontahedron\"\>", ",", "2.961474726571981`", 
+     ",", "84.18197544004813`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentagonalHexecontahedron\"\>", ",", "3.808547728782396`", 
+     ",", "189.7898520668853`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentagonalIcositetrahedron\"\>", ",", "2.2940010536869546`", 
+     ",", "35.63020201207128`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"PentakisDodecahedron\"\>", ",", "1.5796695833306185`", ",", 
+     "13.458569366318715`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"RhombicDodecahedron\"\>", ",", "1.1547005383792517`", ",", 
+     "3.079201435678004`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"RhombicTriacontahedron\"\>", ",", "1.618033988749895`", ",", 
+     "12.310734148701014`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallTriakisOctahedron\"\>", ",", "1.2071067811865475`", ",",
+      "2.914213562373095`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TetrakisHexahedron\"\>", ",", "1.1547005383792517`", ",", 
+     "3.5555555555555554`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TriakisIcosahedron\"\>", ",", "1.6392474765307403`", ",", 
+     "12.017220926874316`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TriakisTetrahedron\"\>", ",", "0.8333333333333334`", ",", 
+     "0.9820927516479826`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.553613392958612*^9, 3.553613416695076*^9}, {
+  3.553613566715643*^9, 3.553613576428444*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"#", ",", " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"PolyhedronData", "[", 
+       RowBox[{"#", ",", " ", "\"\<Circumradius\>\""}], "]"}], "]"}], ",", 
+     " ", 
+     RowBox[{"N", "[", 
+      RowBox[{"PolyhedronData", "[", 
+       RowBox[{"#", ",", " ", "\"\<GeneralizedDiameter\>\""}], "]"}], "]"}]}],
+     "}"}], " ", "&"}], " ", "/@", " ", 
+  RowBox[{"PolyhedronData", "[", "\"\<Archimedean\>\"", "]"}]}]], "Input",
+ CellChangeTimes->{{3.553613155483993*^9, 3.553613217592361*^9}, {
+  3.553613250302795*^9, 3.553613307876934*^9}, {3.5536133436441393`*^9, 
+  3.553613377386869*^9}, {3.55361342631394*^9, 3.553613455425256*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"Cuboctahedron\"\>", ",", "1.`", ",", "2.`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"GreatRhombicosidodecahedron\"\>", ",", "3.8023944998512937`",
+      ",", "7.6047889997025875`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"GreatRhombicuboctahedron\"\>", ",", "2.3176109128927664`", 
+     ",", "4.635221825785533`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"Icosidodecahedron\"\>", ",", "1.618033988749895`", ",", 
+     "3.23606797749979`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallRhombicosidodecahedron\"\>", ",", "2.2329505094156903`",
+      ",", "4.465901018831381`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SmallRhombicuboctahedron\"\>", ",", "1.3989663259659066`", 
+     ",", "2.7979326519318133`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SnubCube\"\>", ",", "1.3437133737446016`", ",", 
+     "2.6573575744213573`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"SnubDodecahedron\"\>", ",", "2.15583737511564`", ",", 
+     "4.294380888587413`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedCube\"\>", ",", "1.7788236456639244`", ",", 
+     "3.5576472913278487`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedDodecahedron\"\>", ",", "2.9694490158633986`", ",", 
+     "5.938898031726796`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedIcosahedron\"\>", ",", "2.4780186590676156`", ",", 
+     "4.956037318135231`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedOctahedron\"\>", ",", "1.5811388300841898`", ",", 
+     "3.1622776601683795`"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"TruncatedTetrahedron\"\>", ",", "1.1726039399558574`", ",", 
+     "2.23606797749979`"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.553613308425349*^9, 3.553613346796817*^9, 3.553613377831986*^9, {
+   3.553613428065567*^9, 3.553613456795299*^9}}],
+
+Cell[BoxData[
+ RowBox[{"PolyhedronData", "[", 
+  RowBox[{"{", 
+   RowBox[{"\<\"Archimedian\"\>", ",", 
+    RowBox[{"PolyhedronData", "[", 
+     RowBox[{"\<\"Archimedian\"\>", ",", "\<\"Circumradius\"\>"}], "]"}]}], 
+   "}"}], "]"}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{{3.5536131676142883`*^9, 3.553613173866704*^9}, {
+  3.553613218201458*^9, 3.5536132953638487`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{"\<\"Icosahedron\"\>", ",", "0.9510565162951535`"}], "}"}], 
+  "}"}]], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{{3.5536131676142883`*^9, 3.553613173866704*^9}, {
+  3.553613218201458*^9, 3.553613278465208*^9}}],
+
+Cell[BoxData["\<\"Icosahedron\"\>"], "Output",
+ GeneratedCell->False,
+ CellAutoOverwrite->False,
+ CellChangeTimes->{{3.5536131676142883`*^9, 3.553613173866704*^9}, {
+  3.553613218201458*^9, 3.553613267909175*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", "%", "]"}]], "Input",
+ CellChangeTimes->{{3.553611506170443*^9, 3.553611508663226*^9}}],
+
+Cell[BoxData["33510.32163829113`"], "Output",
+ CellChangeTimes->{3.5536115090958443`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "[", 
+  RowBox[{"Sqrt", "[", 
+   RowBox[{"64", "*", "3"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.5536130179434023`*^9, 3.553613029900312*^9}}],
+
+Cell[BoxData["13.856406460551018`"], "Output",
+ CellChangeTimes->{{3.553613025079514*^9, 3.5536130302947474`*^9}}]
+}, Open  ]]
+},
+WindowSize->{740, 867},
+WindowMargins->{{175, Automatic}, {Automatic, 144}},
+ShowSelection->True,
+FrontEndVersion->"8.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (October 6, \
+2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "Info3553588989-8649391"->{
+  Cell[19891, 471, 1029, 19, 61, "Print",
+   CellTags->"Info3553588989-8649391"],
+  Cell[20923, 492, 1327, 35, 68, "Print",
+   CellTags->"Info3553588989-8649391"]},
+ "Info3553591933-8649391"->{
+  Cell[29556, 782, 1283, 23, 55, "Print",
+   CellTags->"Info3553591933-8649391"],
+  Cell[30842, 807, 500, 15, 20, "Print",
+   CellTags->"Info3553591933-8649391"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"Info3553588989-8649391", 60958, 1601},
+ {"Info3553591933-8649391", 61152, 1606}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 147, 2, 27, "Input"],
+Cell[729, 26, 1021, 16, 88, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1787, 47, 153, 2, 27, "Input"],
+Cell[1943, 51, 592, 10, 73, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2572, 66, 281, 7, 27, "Input"],
+Cell[2856, 75, 9851, 176, 443, "Output"]
+}, Open  ]],
+Cell[12722, 254, 671, 12, 131, "Text"],
+Cell[CellGroupData[{
+Cell[13418, 270, 708, 16, 43, "Input"],
+Cell[14129, 288, 1229, 45, 66, "Output"],
+Cell[15361, 335, 563, 15, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[15961, 355, 126, 2, 27, "Input"],
+Cell[16090, 359, 1120, 42, 109, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17247, 406, 694, 18, 43, "Input"],
+Cell[17944, 426, 1758, 34, 367, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[19739, 465, 127, 2, 27, "Input"],
+Cell[CellGroupData[{
+Cell[19891, 471, 1029, 19, 61, "Print",
+ CellTags->"Info3553588989-8649391"],
+Cell[20923, 492, 1327, 35, 68, "Print",
+ CellTags->"Info3553588989-8649391"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22299, 533, 192, 4, 27, "Input"],
+Cell[22494, 539, 1595, 56, 124, "Output"]
+}, Open  ]],
+Cell[24104, 598, 128, 2, 27, "Input"],
+Cell[CellGroupData[{
+Cell[24257, 604, 557, 12, 27, "Input"],
+Cell[24817, 618, 1605, 54, 126, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26459, 677, 278, 6, 27, "Input"],
+Cell[26740, 685, 137, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26914, 692, 221, 4, 43, "Input"],
+Cell[27138, 698, 2238, 73, 107, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[29413, 776, 118, 2, 27, "Input"],
+Cell[CellGroupData[{
+Cell[29556, 782, 1283, 23, 55, "Print",
+ CellTags->"Info3553591933-8649391"],
+Cell[30842, 807, 500, 15, 20, "Print",
+ CellTags->"Info3553591933-8649391"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31391, 828, 2022, 47, 163, "Input"],
+Cell[33416, 877, 524, 10, 23, "Message"],
+Cell[33943, 889, 522, 10, 23, "Message"],
+Cell[34468, 901, 522, 10, 23, "Message"],
+Cell[34993, 913, 553, 11, 23, "Message"],
+Cell[35549, 926, 305, 7, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[35891, 938, 589, 14, 27, "Input"],
+Cell[36483, 954, 1811, 32, 392, "Output"]
+}, Open  ]],
+Cell[38309, 989, 92, 1, 27, "Input"],
+Cell[38404, 992, 266, 5, 26, "Text"],
+Cell[CellGroupData[{
+Cell[38695, 1001, 293, 7, 27, "Input"],
+Cell[38991, 1010, 163, 2, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39191, 1017, 203, 5, 27, "Input"],
+Cell[39397, 1024, 99, 1, 27, "Output"]
+}, Open  ]],
+Cell[39511, 1028, 92, 1, 27, "Input"],
+Cell[CellGroupData[{
+Cell[39628, 1033, 1318, 32, 103, "Input"],
+Cell[40949, 1067, 4806, 119, 478, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45792, 1191, 229, 5, 27, "Input"],
+Cell[46024, 1198, 113, 1, 27, "Output"]
+}, Open  ]],
+Cell[46152, 1202, 192, 4, 26, "Text"],
+Cell[46347, 1208, 811, 20, 73, "Input"],
+Cell[CellGroupData[{
+Cell[47183, 1232, 341, 7, 43, "Input"],
+Cell[47527, 1241, 1302, 22, 148, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48866, 1268, 1467, 42, 73, "Input"],
+Cell[50336, 1312, 3445, 91, 238, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53818, 1408, 627, 17, 43, "Input"],
+Cell[54448, 1427, 1973, 43, 133, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[56458, 1475, 696, 16, 43, "Input"],
+Cell[57157, 1493, 1925, 43, 118, "Output"],
+Cell[59085, 1538, 412, 10, 27, "Output"],
+Cell[59500, 1550, 303, 8, 27, "Output"],
+Cell[59806, 1560, 213, 4, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[60056, 1569, 120, 2, 27, "Input"],
+Cell[60179, 1573, 89, 1, 27, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[60305, 1579, 178, 4, 27, "Input"],
+Cell[60486, 1585, 114, 1, 27, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,13 @@
+# What I did to make the three shape arrays.
+
+./shapearray.m Cuboctahedron
+/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD -o "sdcard/CubOct_Rt_3x3_17mm.stl" -D 'xnum = 3' -D 'ynum = 3' -D 'diameter = 17' -D 'model = "CubOctahedron.stl"' shapearray.scad 
+/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD -o "sdcard/CubOct_Lf_3x3_17mm.stl" -D 'xnum = 3' -D 'ynum = 3' -D 'diameter = 17' -D 'model = "CubOctahedron.stl"' shapearray.scad 
+
+./shapearray.m TruncatedOctahedron
+/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD -o "sdcard/TrnOct_Rt_3x3_17mm.stl" -D 'xnum = 3' -D 'ynum = 3' -D 'diameter = 17' -D 'model = "TruncatedOctahedron.stl"' shapearray.scad 
+/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD -o "sdcard/TrnOct_Lf_3x3_17mm.stl" -D 'xnum = 3' -D 'ynum = 3' -D 'diameter = 17' -D 'model = "TruncatedOctahedron.stl"' shapearray.scad 
+
+./shapearray.m Dodecahedron
+/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD -o "sdcard/Dodeca_Rt_3x3_17mm.stl" -D 'xnum = 3' -D 'ynum = 3' -D 'diameter = 17' -D 'model = "Dodecahedron.stl"' shapearray.scad 
+/Applications/OpenSCAD.app/Contents/MacOS/OpenSCAD -o "sdcard/Dodeca_Lf_3x3_17mm.stl" -D 'xnum = 3' -D 'ynum = 3' -D 'diameter = 17' -D 'model = "Dodecahedron.stl"' shapearray.scad 

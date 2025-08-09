@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/204/trunk/makerbot/polyhedra
+END
+rhc_tubes_halfsize.stl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/202/trunk/makerbot/polyhedra/rhc_tubes_halfsize.stl
+END
+rhc_tubes_minimal.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/204/trunk/makerbot/polyhedra/rhc_tubes_minimal.gcode
+END
+normvec.nb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/189/trunk/makerbot/polyhedra/normvec.nb
+END
+PentagonalHexecontahedron.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/169/trunk/makerbot/polyhedra/PentagonalHexecontahedron.gcode
+END
+shapearray.scad
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/shapearray.scad
+END
+rhc_tubes_support_halfsize.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/203/trunk/makerbot/polyhedra/rhc_tubes_support_halfsize.gcode
+END
+TruncatedOctahedron_single.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/TruncatedOctahedron_single.gcode
+END
+RhombicDodecahedron_array.stl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/RhombicDodecahedron_array.stl
+END
+skeleton.nb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/skeleton.nb
+END
+RhombicHexecontahedron.stl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/190/trunk/makerbot/polyhedra/RhombicHexecontahedron.stl
+END
+rhc_tubes_halfsize.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/203/trunk/makerbot/polyhedra/rhc_tubes_halfsize.gcode
+END
+RhombicDodecahedron.stl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/183/trunk/makerbot/polyhedra/RhombicDodecahedron.stl
+END
+rhc_tubes_support_repaired.stl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/rhc_tubes_support_repaired.stl
+END
+rhc_tubes_minimal_poly.stl
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/204/trunk/makerbot/polyhedra/rhc_tubes_minimal_poly.stl
+END
+rhc_tubes_repaired.stl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/rhc_tubes_repaired.stl
+END
+polyprint.m
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/polyprint.m
+END
+rhc_tubes_minimal_support_repaired.stl
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/204/trunk/makerbot/polyhedra/rhc_tubes_minimal_support_repaired.stl
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/183/trunk/makerbot/polyhedra/README
+END
+Truncatedoctahedron_array.stl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Truncatedoctahedron_array.stl
+END
+polyhedra.scad
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/175/trunk/makerbot/polyhedra/polyhedra.scad
+END
+RhombicDodecahedron_array.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/RhombicDodecahedron_array.gcode
+END
+RhombicHexecontahedron.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/RhombicHexecontahedron.gcode
+END
+RhombicDodecahedron.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/169/trunk/makerbot/polyhedra/RhombicDodecahedron.gcode
+END
+rhc_tubes_minimal_poly_repaired.stl
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/204/trunk/makerbot/polyhedra/rhc_tubes_minimal_poly_repaired.stl
+END
+rhc_tubes_support_repaired.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/rhc_tubes_support_repaired.gcode
+END
+polydice.nb
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/170/trunk/makerbot/polyhedra/polydice.nb
+END
+rhc_tubes_repaired.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/rhc_tubes_repaired.gcode
+END
+rhc_tubes_support.stl
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/rhc_tubes_support.stl
+END
+rhc_tubes_minimal_support_repaired.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/204/trunk/makerbot/polyhedra/rhc_tubes_minimal_support_repaired.gcode
+END
+Truncatedoctahedron_array.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Truncatedoctahedron_array.gcode
+END
+Dodecahedron_array.stl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Dodecahedron_array.stl
+END
+Cuboctahedron_array.stl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Cuboctahedron_array.stl
+END
+rhc_tubes.stl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/rhc_tubes.stl
+END
+Dodecahedron.stl
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Dodecahedron.stl
+END
+Cuboctahedron.stl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Cuboctahedron.stl
+END
+rhc_tubes_minimal_support.stl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/204/trunk/makerbot/polyhedra/rhc_tubes_minimal_support.stl
+END
+rhc_tubes_minimal_poly_repaired.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/204/trunk/makerbot/polyhedra/rhc_tubes_minimal_poly_repaired.gcode
+END
+rhc_tubes.scad
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/204/trunk/makerbot/polyhedra/rhc_tubes.scad
+END
+PentagonalHexecontahedron.stl
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/169/trunk/makerbot/polyhedra/PentagonalHexecontahedron.stl
+END
+shapearray.m
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/shapearray.m
+END
+Dodecahedron_array.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Dodecahedron_array.gcode
+END
+rhc_tubes.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/rhc_tubes.gcode
+END
+Cuboctahedron_array.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Cuboctahedron_array.gcode
+END
+rhc_tubes_support_halfsize.stl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/202/trunk/makerbot/polyhedra/rhc_tubes_support_halfsize.stl
+END
+Cuboctahedron.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/Cuboctahedron.gcode
+END
+TruncatedOctahedron.stl
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/182/trunk/makerbot/polyhedra/TruncatedOctahedron.stl
+END
+TruncatedOctahedron_single.stl
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/195/trunk/makerbot/polyhedra/TruncatedOctahedron_single.stl
+END
