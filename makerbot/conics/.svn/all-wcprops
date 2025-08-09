@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/168/trunk/makerbot/conics
+END
+ellipse_top_body.stl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/168/trunk/makerbot/conics/ellipse_top_body.stl
+END
+ellipse_bottom_body.stl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/168/trunk/makerbot/conics/ellipse_bottom_body.stl
+END
+ellipse_top_ring.stl
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/168/trunk/makerbot/conics/ellipse_top_ring.stl
+END
+ellipse_conic.scad
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/168/trunk/makerbot/conics/ellipse_conic.scad
+END
+ellipse_bottom_ring.stl
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/168/trunk/makerbot/conics/ellipse_bottom_ring.stl
+END

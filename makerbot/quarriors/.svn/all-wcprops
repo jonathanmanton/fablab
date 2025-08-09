@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/172/trunk/makerbot/quarriors
+END
+quarriors_tray.gcode
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/172/trunk/makerbot/quarriors/quarriors_tray.gcode
+END
+quarriors_tray.stl
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/172/trunk/makerbot/quarriors/quarriors_tray.stl
+END
+quarriors_tray.scad
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/171/trunk/makerbot/quarriors/quarriors_tray.scad
+END
