@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="765"
+   height="990"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="joy_pot_panel.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.3861229"
+     inkscape:cx="221.48503"
+     inkscape:cy="864.51482"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-nodes="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:object-nodes="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:object-paths="true"
+     inkscape:snap-midpoints="false"
+     inkscape:window-width="1680"
+     inkscape:window-height="805"
+     inkscape:window-x="-5"
+     inkscape:window-y="46"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3755"
+       empspacing="5"
+       visible="true"
+       enabled="false"
+       snapvisiblegridlinesonly="true"
+       units="in"
+       spacingx="0.1in"
+       spacingy="0in" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="846.22822,799.84658"
+       id="guide8523" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="614.56752,818.92189"
+       id="guide8525" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="510.56752,841.70414"
+       id="guide8527" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-62.362183)">
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path8281"
+       sodipodi:cx="286.6608"
+       sodipodi:cy="115.51048"
+       sodipodi:rx="12"
+       sodipodi:ry="12"
+       d="m 298.6608,115.51048 a 12,12 0 1 1 -24,0 12,12 0 1 1 24,0 z"
+       transform="translate(-20.64183,73.445693)" />
+    <path
+       transform="translate(83.35817,73.445693)"
+       d="m 298.6608,115.51048 a 12,12 0 1 1 -24,0 12,12 0 1 1 24,0 z"
+       sodipodi:ry="12"
+       sodipodi:rx="12"
+       sodipodi:cy="115.51048"
+       sodipodi:cx="286.6608"
+       id="path8301"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       transform="translate(129.78098,73.103013)"
+       d="m 244.23799,144.35001 a 4,4 0 1 1 -8,0 4,4 0 1 1 8,0 z"
+       sodipodi:ry="4"
+       sodipodi:rx="4"
+       sodipodi:cy="144.35001"
+       sodipodi:cx="240.23799"
+       id="path8303"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path8307"
+       sodipodi:cx="192.92456"
+       sodipodi:cy="116.07056"
+       sodipodi:rx="40.5"
+       sodipodi:ry="40.5"
+       d="m 233.42456,116.07056 a 40.5,40.5 0 1 1 -81,0 40.5,40.5 0 1 1 81,0 z"
+       transform="translate(-52.90559,72.885613)" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="391.13651"
+       y="268.73123"
+       id="text8325"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8327"
+         x="391.13651"
+         y="268.73123"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">'DUINO</tspan><tspan
+         sodipodi:role="line"
+         x="391.13651"
+         y="278.73123"
+         id="tspan8329"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">A3</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path8347"
+       d="m 363.61017,242.09899 -31.32148,16.90014 0,27.88523 31.32148,0 z"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text8349"
+       y="268.73123"
+       x="348.05148"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="tspan8353"
+         y="268.73123"
+         x="348.05148"
+         sodipodi:role="line">PROTO</tspan><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         y="278.73123"
+         x="348.05148"
+         sodipodi:role="line"
+         id="tspan8365">POT1</tspan></text>
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 375.61017,242.09899 31.32148,16.90014 0,27.88523 -31.32148,0 z"
+       id="path8369"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text8379"
+       y="268.73123"
+       x="287.34036"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         y="268.73123"
+         x="287.34036"
+         id="tspan8381"
+         sodipodi:role="line">'DUINO</tspan><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="tspan8383"
+         y="278.73123"
+         x="287.34036"
+         sodipodi:role="line">A2</tspan></text>
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 259.81403,242.09899 -31.32148,16.90014 0,27.88523 31.32148,0 z"
+       id="path8385"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="244.25531"
+       y="268.73123"
+       id="text8387"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="244.25531"
+         y="268.73123"
+         id="tspan8389"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">PROTO</tspan><tspan
+         id="tspan8391"
+         sodipodi:role="line"
+         x="244.25531"
+         y="278.73123"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">POT0</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path8393"
+       d="m 271.81403,242.09899 31.32148,16.90014 0,27.88523 -31.32148,0 z"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="161.63858"
+       y="268.73123"
+       id="text8395"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8397"
+         x="161.63858"
+         y="268.73123"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">'DUINO</tspan><tspan
+         sodipodi:role="line"
+         x="161.63858"
+         y="278.73123"
+         id="tspan8399"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">A0</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path8401"
+       d="m 134.11225,242.09899 -31.32148,16.90014 0,27.88523 31.32148,0 z"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text8403"
+       y="268.73123"
+       x="118.55353"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         y="268.73123"
+         x="118.55353"
+         sodipodi:role="line"
+         id="tspan8407">PROTO</tspan><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         y="278.73123"
+         x="118.55353"
+         sodipodi:role="line"
+         id="tspan8413">JOY X</tspan></text>
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 146.11225,242.09899 31.32148,16.90014 0,27.88523 -31.32148,0 z"
+       id="path8409"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text8415"
+       y="202.82896"
+       x="56.609501"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         y="202.82896"
+         x="56.609501"
+         id="tspan8417"
+         sodipodi:role="line">'DUINO</tspan><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="tspan8419"
+         y="212.82896"
+         x="56.609501"
+         sodipodi:role="line">A1</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="56.119114"
+       y="161.10127"
+       id="text8423"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan8425"
+         sodipodi:role="line"
+         x="56.119114"
+         y="161.10127"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">PROTO</tspan><tspan
+         id="tspan8427"
+         sodipodi:role="line"
+         x="56.119114"
+         y="171.10127"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">JOY Y</tspan></text>
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 84.7643,179.33656 -16.90014,-31.32147 -27.88523,0 0,31.32147 z"
+       id="path8421"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path8429"
+       d="m 84.7643,191.33657 -16.90014,31.32147 -27.88523,0 0,-31.32148 z"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text8437"
+       y="99.55088"
+       x="161.44635"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         y="99.55088"
+         x="161.44635"
+         id="tspan8439"
+         sodipodi:role="line">'DUINO</tspan><tspan
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans"
+         id="tspan8441"
+         y="109.55088"
+         x="161.44635"
+         sodipodi:role="line">D2</tspan></text>
+    <path
+       sodipodi:nodetypes="ccccc"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 133.93402,131.07094 -31.32148,-16.90014 0,-27.885217 31.32148,0 z"
+       id="path8443"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:12px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="118.3475"
+       y="99.625084"
+       id="text8445"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan8447"
+         sodipodi:role="line"
+         x="118.3475"
+         y="99.625084"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">PROTO</tspan><tspan
+         id="tspan8449"
+         sodipodi:role="line"
+         x="118.3475"
+         y="109.62508"
+         style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;writing-mode:lr-tb;text-anchor:middle;font-family:Bitstream Vera Sans;-inkscape-font-specification:Bitstream Vera Sans">JOY B</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path8451"
+       d="m 145.93402,131.07094 31.32148,-16.90014 0,-27.885217 -31.32148,0 z"
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       sodipodi:nodetypes="ccccc" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect8453"
+       width="437.32993"
+       height="245.88077"
+       x="2.8200719"
+       y="64.906982" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="path8529"
+       sodipodi:cx="240.23799"
+       sodipodi:cy="143.89999"
+       sodipodi:rx="4"
+       sodipodi:ry="4"
+       d="m 244.23799,143.89999 a 4,4 0 1 1 -8,0 4,4 0 1 1 8,0 z"
+       transform="translate(25.78098,73.103013)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path9106"
+       sodipodi:cx="17.601776"
+       sodipodi:cy="27.350513"
+       sodipodi:rx="5.625"
+       sodipodi:ry="5.625"
+       d="m 23.226776,27.350513 c 0,3.106602 -2.518398,5.625 -5.625,5.625 -3.106602,0 -5.625,-2.518398 -5.625,-5.625 0,-3.106601 2.518398,-5.625 5.625,-5.625 3.106602,0 5.625,2.518399 5.625,5.625 z"
+       transform="translate(-1.1939963,50.208575)" />
+    <path
+       transform="translate(-0.35581655,268.9735)"
+       d="m 23.226776,27.350513 c 0,3.106602 -2.518398,5.625 -5.625,5.625 -3.106602,0 -5.625,-2.518398 -5.625,-5.625 0,-3.106601 2.518398,-5.625 5.625,-5.625 3.106602,0 5.625,2.518399 5.625,5.625 z"
+       sodipodi:ry="5.625"
+       sodipodi:rx="5.625"
+       sodipodi:cy="27.350513"
+       sodipodi:cx="17.601776"
+       id="path9108"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc" />
+    <path
+       transform="translate(411.19046,47.274946)"
+       d="m 23.226776,27.350513 c 0,3.106602 -2.518398,5.625 -5.625,5.625 -3.106602,0 -5.625,-2.518398 -5.625,-5.625 0,-3.106601 2.518398,-5.625 5.625,-5.625 3.106602,0 5.625,2.518399 5.625,5.625 z"
+       sodipodi:ry="5.625"
+       sodipodi:rx="5.625"
+       sodipodi:cy="27.350513"
+       sodipodi:cx="17.601776"
+       id="path9110"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path9112"
+       sodipodi:cx="17.601776"
+       sodipodi:cy="27.350513"
+       sodipodi:rx="5.625"
+       sodipodi:ry="5.625"
+       d="m 23.226776,27.350513 c 0,3.106602 -2.518398,5.625 -5.625,5.625 -3.106602,0 -5.625,-2.518398 -5.625,-5.625 0,-3.106601 2.518398,-5.625 5.625,-5.625 3.106602,0 5.625,2.518399 5.625,5.625 z"
+       transform="translate(408.67592,273.1644)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 38.97536,227.68712 44.004439,0.41909"
+       id="path9275"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9277"
+       d="m 38.57327,185.76581 51.548057,0"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9283"
+       d="m 182.3041,85.615647 0.83818,54.481683"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 139.55693,85.615646 0.41909,46.518974"
+       id="path9285"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9287"
+       d="m 139.97602,237.32619 0,49.4526"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 181.88501,233.13529 0.83818,53.22441"
+       id="path9289"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 265.2839,234.81165 0.83818,52.80532"
+       id="path9293"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9295"
+       d="m 307.19289,230.62075 -0.83818,56.99622"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 221.69855,232.7162 -0.41909,55.31986"
+       id="path9297"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9299"
+       d="m 370.05637,236.06892 -0.83818,53.22441"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path9303"
+       d="m 326.47102,233.97347 0.41909,56.15804"
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

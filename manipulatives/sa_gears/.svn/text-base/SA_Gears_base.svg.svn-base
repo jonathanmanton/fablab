@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with sK1/UniConvertor (http://sk1project.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1099.6146"
+   height="716.77325"
+   viewBox="0 0 879.69175 573.41857"
+   id="svg54"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="SA_Gears_base.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0"
+   style="fill-rule:evenodd">
+  <metadata
+     id="metadata600">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1680"
+     inkscape:window-height="1028"
+     id="namedview598"
+     showgrid="false"
+     units="in"
+     inkscape:zoom="1.1444343"
+     inkscape:cx="545.30731"
+     inkscape:cy="362.88663"
+     inkscape:window-x="49"
+     inkscape:window-y="15"
+     inkscape:current-layer="layer1"
+     inkscape:window-maximized="0"
+     fit-margin-top="0.1"
+     fit-margin-left="0.1"
+     fit-margin-right="0.1"
+     fit-margin-bottom="0.1" />
+  <defs
+     id="defs56">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18127 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09497 : 526.18127 : 1"
+       inkscape:persp3d-origin="372.04749 : 350.78752 : 1"
+       id="perspective602" />
+    <marker
+       id="ArrowEnd"
+       viewBox="0 0 10 10"
+       refX="0"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto">
+      <path
+         d="M 0,0 10,5 0,10 z"
+         id="path59"
+         inkscape:connector-curvature="0" />
+    </marker>
+    <marker
+       id="ArrowStart"
+       viewBox="0 0 10 10"
+       refX="10"
+       refY="5"
+       markerUnits="strokeWidth"
+       markerWidth="4"
+       markerHeight="3"
+       orient="auto">
+      <path
+         d="M 10,0 0,5 10,10 z"
+         id="path62"
+         inkscape:connector-curvature="0" />
+    </marker>
+  </defs>
+  <g
+     id="g596"
+     style="fill:none;stroke:#000000;stroke-width:0.072;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+     transform="translate(8.5783421,23.817115)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Gears"
+     style="display:inline"
+     transform="translate(2.4831037,2.4831156)" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Base"
+     style="display:inline"
+     sodipodi:insensitive="true"
+     transform="translate(2.4831037,2.4831156)">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.09;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2183"
+       width="1081.4896"
+       height="698.64825"
+       x="5.9586205"
+       y="5.9586205"
+       transform="matrix(0.80000005,0,0,0.80000005,0,-4.5e-5)" />
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.72000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect2185"
+       width="115.93091"
+       height="15.352784"
+       x="474.23407"
+       y="491.99301" />
+    <path
+       id="path2191"
+       d="m 183.30724,162.85033 c 0,0 0.6,4.202 0.6,4.202 0,0 1.501,4.002 1.501,4.002 0,0 2.502,3.403 2.502,3.403 0,0 3.302,2.701 3.302,2.701 0,0 3.902,1.901 3.902,1.901 0,0 4.203,0.801 4.203,0.801 0,0 4.202,-0.3 4.202,-0.3 0,0 4.103,-1.301 4.103,-1.301 0,0 3.602,-2.301 3.602,-2.301 0,0 2.901,-3.102 2.901,-3.102 0,0 2.001,-3.803 2.001,-3.803 0,0 1.101,-4.102 1.101,-4.102 0,0 0,-4.203 0,-4.203 0,0 -1.101,-4.202 -1.101,-4.202 0,0 -2.001,-3.702 -2.001,-3.702 0,0 -2.901,-3.102 -2.901,-3.102 0,0 -3.602,-2.301 -3.602,-2.301 0,0 -4.103,-1.301 -4.103,-1.301 0,0 -4.202,-0.3 -4.202,-0.3 0,0 -4.203,0.8 -4.203,0.8 0,0 -3.902,1.802 -3.902,1.802 0,0 -3.302,2.701 -3.302,2.701 0,0 -2.502,3.502 -2.502,3.502 0,0 -1.501,4.002 -1.501,4.002 0,0 -0.6,4.203 -0.6,4.203 z"
+       style="fill:none;stroke:#000000;stroke-width:0.72000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path2195"
+       d="m 424.70524,217.68933 c 0,0 0.602,4.215 0.602,4.215 0,0 1.506,4.014 1.506,4.014 0,0 2.508,3.412 2.508,3.412 0,0 3.312,2.71 3.312,2.71 0,0 3.914,1.806 3.914,1.806 0,0 4.215,0.803 4.215,0.803 0,0 4.215,-0.201 4.215,-0.201 0,0 4.114,-1.304 4.114,-1.304 0,0 3.613,-2.309 3.613,-2.309 0,0 2.91,-3.111 2.91,-3.111 0,0 2.008,-3.813 2.008,-3.813 0,0 1.103,-4.114 1.103,-4.114 0,0 0,-4.316 0,-4.316 0,0 -1.103,-4.114 -1.103,-4.114 0,0 -2.008,-3.713 -2.008,-3.713 0,0 -2.91,-3.112 -2.91,-3.112 0,0 -3.613,-2.308 -3.613,-2.308 0,0 -4.114,-1.304 -4.114,-1.304 0,0 -4.215,-0.301 -4.215,-0.301 0,0 -4.215,0.803 -4.215,0.803 0,0 -3.914,1.806 -3.914,1.806 0,0 -3.312,2.709 -3.312,2.709 0,0 -2.508,3.513 -2.508,3.513 0,0 -1.506,3.914 -1.506,3.914 0,0 -0.602,4.315 -0.602,4.315 z"
+       style="fill:none;stroke:#000000;stroke-width:0.72000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path2198"
+       d="m 509.33924,371.41533 c 0,0 0.503,4.227 0.503,4.227 0,0 1.61,4.026 1.61,4.026 0,0 2.517,3.523 2.517,3.523 0,0 3.321,2.717 3.321,2.717 0,0 3.825,1.812 3.825,1.812 0,0 4.227,0.805 4.227,0.805 0,0 4.328,-0.302 4.328,-0.302 0,0 4.026,-1.308 4.026,-1.308 0,0 3.623,-2.315 3.623,-2.315 0,0 2.919,-3.12 2.919,-3.12 0,0 2.114,-3.724 2.114,-3.724 0,0 1.007,-4.228 1.007,-4.228 0,0 0,-4.227 0,-4.227 0,0 -1.007,-4.227 -1.007,-4.227 0,0 -2.114,-3.725 -2.114,-3.725 0,0 -2.919,-3.12 -2.919,-3.12 0,0 -3.623,-2.315 -3.623,-2.315 0,0 -4.026,-1.308 -4.026,-1.308 0,0 -4.328,-0.302 -4.328,-0.302 0,0 -4.227,0.805 -4.227,0.805 0,0 -3.825,1.812 -3.825,1.812 0,0 -3.321,2.818 -3.321,2.818 0,0 -2.517,3.422 -2.517,3.422 0,0 -1.61,4.026 -1.61,4.026 0,0 -0.503,4.228 -0.503,4.228 z"
+       style="fill:none;stroke:#000000;stroke-width:0.72000003;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:9.60000038px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="861.55334"
+       y="23.92733"
+       id="text2473"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2475"
+         x="868.22833"
+         y="23.92733"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold">Designed at the </tspan><tspan
+         sodipodi:role="line"
+         x="861.55334"
+         y="47.92733"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan2485">AMTS FabLab North-West,</tspan><tspan
+         sodipodi:role="line"
+         x="861.55334"
+         y="71.92733"
+         id="tspan2477"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold">Potchefstroom, South Africa.</tspan><tspan
+         sodipodi:role="line"
+         x="861.55334"
+         y="95.92733"
+         id="tspan2479"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold" /><tspan
+         sodipodi:role="line"
+         x="861.55334"
+         y="119.92734"
+         id="tspan2483"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold">Made at the Champaign-Urbana</tspan><tspan
+         sodipodi:role="line"
+         x="861.55334"
+         y="143.92734"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan2495"> Community FabLab,</tspan><tspan
+         sodipodi:role="line"
+         x="861.55334"
+         y="167.92734"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan2503"> Urbana, IL, USA</tspan><tspan
+         sodipodi:role="line"
+         x="861.55334"
+         y="191.92734"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan2505" /><tspan
+         sodipodi:role="line"
+         x="861.55334"
+         y="215.92734"
+         style="font-size:19.20000076px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:end;line-height:125%;writing-mode:lr-tb;text-anchor:end;font-family:Sans;-inkscape-font-specification:Sans Bold"
+         id="tspan2507">September 2010</tspan></text>
+  </g>
+</svg>

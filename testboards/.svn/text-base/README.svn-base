@@ -1,0 +1,18 @@
+Stuff here created using cad.py from MIT.
+
+z min set to -0.005 (five mils).  z max at 0.01.
+
+Under Windows should be able to send directly to Modela with (in command window)
+	type whatever.rml > COM1
+
+Or whatever com port the Modela is attached to.
+
+Tool speed is either 1 or 4, specified in file (need to experiment, which speed
+is safe for bit).
+
+All done using 1 contour, and the largest bit where all traces are isolated.
+
+The blinky PNG was exported from Eagle after setting the view layers to be only 
+top, bottom, pads, and vias, resolution 500 dpi, monochrome.  The image had to
+be inverted after opening in cad.py.
+

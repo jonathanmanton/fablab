@@ -1,0 +1,1393 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 7.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     60505,       1384]
+NotebookOptionsPosition[     60151,       1367]
+NotebookOutlinePosition[     60511,       1383]
+CellTagsIndexPosition[     60468,       1380]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Needs", "[", "\"\<Polytopes`\>\"", "]"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"L1", " ", "=", " ", 
+     RowBox[{"Vertices", "[", "Pentagon", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"L2", "=", " ", 
+     RowBox[{"Delete", "[", 
+      RowBox[{
+       RowBox[{"Prepend", "[", 
+        RowBox[{"L1", ",", " ", 
+         RowBox[{"Flatten", "[", 
+          RowBox[{"Take", "[", 
+           RowBox[{"L1", ",", 
+            RowBox[{"-", "1"}]}], "]"}], "]"}]}], "]"}], ",", 
+       RowBox[{"-", "1"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"L3", " ", "=", " ", 
+     RowBox[{"MapThread", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"#1", " ", "+", " ", "#2"}], ")"}], "/", "2"}], "&"}], ",", 
+       " ", 
+       RowBox[{"{", 
+        RowBox[{"L1", ",", " ", "L2"}], "}"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"myLen", "[", "t_", "]"}], " ", ":=", " ", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"t", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "[", 
+       RowBox[{"[", "2", "]"}], "]"}], " ", "-", " ", 
+      RowBox[{
+       RowBox[{"t", "[", 
+        RowBox[{"[", "1", "]"}], "]"}], "[", 
+       RowBox[{"[", "1", "]"}], "]"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SlotDisplay", "[", 
+      RowBox[{"g_", ",", " ", "p_"}], "]"}], " ", ":=", " ", 
+     RowBox[{"MapIndexed", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Translate", "[", 
+         RowBox[{
+          RowBox[{"Rotate", "[", 
+           RowBox[{"g", ",", " ", 
+            RowBox[{
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"First", "[", "#2", "]"}], " ", "+", " ", "2"}], 
+                ")"}], " ", "/", " ", "5"}], " ", "360", " ", "Degree"}], " ",
+              "+", " ", 
+             RowBox[{"90", " ", "Degree"}]}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", "#1"}], "]"}], " ",
+         "&"}], " ", ",", " ", "p"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SupportTabs", "[", 
+      RowBox[{"g_", ",", " ", "t_"}], "]"}], " ", ":=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Translate", "[", 
+        RowBox[{"g", ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"t", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+       RowBox[{"Rotate", "[", 
+        RowBox[{
+         RowBox[{"Scale", "[", 
+          RowBox[{
+           RowBox[{"Translate", "[", 
+            RowBox[{"g", ",", " ", 
+             RowBox[{"{", 
+              RowBox[{"t", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", " ", 
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{
+          RowBox[{"180", " ", "Degree"}], " ", "+", " ", 
+          RowBox[{"ArcCos", "[", 
+           RowBox[{
+            RowBox[{"-", "1"}], "/", 
+            RowBox[{"Sqrt", "[", "5", "]"}]}], "]"}]}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}]}], "]"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"SupportArmPoints", " ", ":=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+       RowBox[{"{", " ", 
+        RowBox[{
+         RowBox[{"1", "/", 
+          RowBox[{"Sqrt", "[", "5", "]"}]}], ",", " ", 
+         RowBox[{"-", 
+          RowBox[{"Sin", "[", 
+           RowBox[{"ArcCos", "[", 
+            RowBox[{
+             RowBox[{"-", "1"}], "/", 
+             RowBox[{"Sqrt", "[", "5", "]"}]}], "]"}], "]"}]}]}], "}"}]}], 
+      "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SupportArms", "[", 
+      RowBox[{
+      "p1_", ",", " ", "p2_", ",", " ", "scale_", ",", " ", "r1_", ",", " ", 
+       "r2_"}], "]"}], " ", ":=", " ", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Line", "[", 
+        RowBox[{"scale", " ", "p1", " ", "SupportArmPoints"}], "]"}], ",", 
+       " ", 
+       RowBox[{"Line", "[", 
+        RowBox[{"scale", " ", "p2", " ", "SupportArmPoints"}], "]"}]}], 
+      "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"SupportDisplay", "[", 
+      RowBox[{"g_", ",", " ", "t_"}], "]"}], " ", ":=", " ", 
+     RowBox[{"SupportTabs", "[", 
+      RowBox[{"g", ",", "t"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"slot", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "tsupport"}], "/", "2"}], " ", "+", 
+            RowBox[{".5", " ", "kerf"}]}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "r"}], " ", 
+             RowBox[{"tabwidth", "/", "2"}]}], " ", "+", " ", 
+            RowBox[{".5", " ", "kerf"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"tsupport", "/", "2"}], " ", "-", " ", 
+            RowBox[{".5", " ", "kerf"}]}], ",", " ", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "r"}], " ", 
+             RowBox[{"tabwidth", "/", "2"}]}], " ", "+", " ", 
+            RowBox[{".5", "kerf"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"tsupport", "/", "2"}], " ", "-", " ", 
+            RowBox[{".5", "kerf"}]}], ",", " ", 
+           RowBox[{
+            RowBox[{"r", " ", 
+             RowBox[{"tabwidth", "/", "2"}]}], " ", "-", " ", 
+            RowBox[{".5", "kerf"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "tsupport"}], "/", "2"}], " ", "+", " ", 
+            RowBox[{".5", "kerf"}]}], ",", " ", 
+           RowBox[{
+            RowBox[{"r", " ", 
+             RowBox[{"tabwidth", "/", "2"}]}], " ", "-", " ", 
+            RowBox[{".5", "kerf"}]}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "tsupport"}], "/", "2"}], " ", "+", " ", 
+            RowBox[{".5", "kerf"}]}], ",", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "r"}], " ", 
+             RowBox[{"tabwidth", "/", "2"}]}], " ", "+", 
+            RowBox[{".5", " ", "kerf"}]}]}], "}"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"slotshoulders", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "tsupport"}], "/", "2"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "r"}], 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"tabwidth", "/", "2"}], " ", "+", " ", "ishoulder"}], 
+             ")"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "tsupport"}], "/", "2"}], ",", " ", 
+           RowBox[{"r", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"tabwidth", "/", "2"}], " ", "+", " ", "oshoulder"}], 
+             ")"}]}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"tsupport", "/", "2"}], ",", 
+           RowBox[{"r", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"tabwidth", "/", "2"}], " ", "+", " ", "oshoulder"}], 
+             ")"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"tsupport", "/", "2"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "r"}], 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"tabwidth", "/", "2"}], " ", "+", " ", "ishoulder"}], 
+             ")"}]}]}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "tsupport"}], "/", "2"}], ",", " ", 
+           RowBox[{
+            RowBox[{"-", "r"}], 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"tabwidth", "/", "2"}], " ", "+", " ", "ishoulder"}], 
+             ")"}]}]}], "}"}]}], "}"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"slotside", " ", "=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "r"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"tabwidth", "/", "2"}], " ", "+", " ", "ishoulder"}], 
+             ")"}]}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "r"}], " ", 
+             RowBox[{"tabwidth", " ", "/", "2"}]}], " ", "-", 
+            RowBox[{".5", "kerf"}]}], ",", " ", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "r"}], " ", 
+             RowBox[{"tabwidth", " ", "/", "2"}]}], " ", "-", 
+            RowBox[{".5", "kerf"}]}], " ", ",", " ", 
+           RowBox[{"tface", " ", "+", " ", "kerf"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"r", " ", 
+             RowBox[{"tabwidth", " ", "/", "2"}]}], " ", "+", " ", 
+            RowBox[{".5", "kerf"}]}], " ", ",", " ", 
+           RowBox[{"tface", " ", "+", "kerf"}]}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"r", " ", 
+             RowBox[{"tabwidth", " ", "/", "2"}]}], " ", "+", 
+            RowBox[{".5", "kerf"}]}], ",", " ", "0"}], "}"}], ",", " ", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"r", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"tabwidth", " ", "/", "2"}], " ", "+", " ", 
+              "oshoulder"}], ")"}]}], ",", " ", "0"}], "}"}]}], "}"}]}], ";", 
+      " ", 
+      RowBox[{"(*", " ", 
+       RowBox[{
+        RowBox[{
+        "put", " ", "all", " ", "the", " ", "kerf", " ", "at", " ", 
+         "\"\<top\>\"", " ", "of", " ", "tab"}], ",", " ", 
+        RowBox[{"so", " ", "that", " ", "we", " ", 
+         RowBox[{"don", "'"}], "t", " ", "have", " ", "to", " ", "mess", " ", 
+         "with", " ", "the", " ", "y", " ", "coordinate", " ", "of", " ", 
+         "0"}]}], " ", "*)"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"FaceEdge", "[", 
+        RowBox[{"p1_", ",", "p2_"}], "]"}], " ", ":=", " ", 
+       RowBox[{"Line", "[", 
+        RowBox[{"{", 
+         RowBox[{"p1", ",", " ", "p2"}], "}"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"FaceEdges", "[", "r_", "]"}], " ", ":=", " ", 
+       RowBox[{"ListConvolve", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"r", ",", "r"}], "}"}], ",", 
+         RowBox[{"Vertices", "[", "Pentagon", "]"}], ",", "2", ",", 
+         RowBox[{"Vertices", "[", "Pentagon", "]"}], ",", "Times", ",", 
+         "FaceEdge", ",", " ", "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Face", "[", "]"}], " ", ":=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"AbsoluteThickness", "[", "1", "]"}], ",", 
+         RowBox[{"FaceEdges", "[", "r", "]"}], ",", " ", 
+         RowBox[{"SlotDisplay", "[", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"Map", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"#1", " ", "+", " ", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{".5", " ", "r", " ", "supoffset"}], ",", "0"}], 
+                 "}"}]}], "&"}], ",", "slot"}], "]"}], "]"}], ",", " ", 
+           RowBox[{"r", " ", "s", " ", "L3"}]}], "]"}], ",", 
+         RowBox[{"SlotDisplay", "[", 
+          RowBox[{
+           RowBox[{"Line", "[", 
+            RowBox[{"Map", "[", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"#1", " ", "+", " ", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"-", ".5"}], " ", "r", " ", "supoffset"}], ",", 
+                  "0"}], "}"}]}], "&"}], ",", "slot"}], "]"}], "]"}], ",", 
+           " ", 
+           RowBox[{"r", " ", "s", " ", "L3"}]}], "]"}], ",", " ", 
+         RowBox[{"Circle", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", "0"}], "}"}], ",", 
+           RowBox[{".55", "r"}]}], "]"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Support", "[", "]"}], " ", ":=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"AbsoluteThickness", "[", "1", "]"}], ",", 
+         RowBox[{"SupportDisplay", "[", 
+          RowBox[{
+           RowBox[{"Line", "[", "slotside", "]"}], ",", "  ", 
+           RowBox[{
+            RowBox[{"-", "r"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"foffset", " ", "+", " ", "1", " ", "-", " ", "s"}], 
+             ")"}]}]}], "]"}], ",", " ", 
+         RowBox[{"SupportArms", "[", 
+          RowBox[{
+           RowBox[{
+           "foffset", " ", "+", " ", "1", " ", "-", "s", " ", "+", " ", 
+            RowBox[{"tabwidth", "/", "2"}], " ", "+", " ", "ishoulder"}], ",",
+            " ", 
+           RowBox[{"foffset", " ", "+", " ", "1", "-", "s", " ", "-", " ", 
+            RowBox[{"tabwidth", " ", "/", "2"}], " ", "-", " ", "oshoulder"}],
+            ",", "r", " ", ",", " ", "0", ",", " ", "0"}], "]"}]}], "}"}]}], 
+      ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"gr1", "[", "]"}], " ", ":=", " ", 
+       RowBox[{"{", " ", 
+        RowBox[{
+         RowBox[{"Face", "[", "]"}], ",", " ", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.8", "r"}], ",", 
+             RowBox[{
+              RowBox[{"-", ".7"}], "r"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.8", "r"}], ",", 
+             RowBox[{
+              RowBox[{"-", ".3"}], "r"}]}], "}"}]}], "]"}], " ", ",", " ", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.8", "r"}], ",", 
+             RowBox[{".1", "r"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.8", "r"}], ",", 
+             RowBox[{".5", "r"}]}], "}"}]}], "]"}], " ", ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.8", "r"}], ",", 
+             RowBox[{".9", "r"}]}], "}"}]}], "]"}], "  ", ",", " ", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", 
+              RowBox[{"-", "60"}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"105", ",", 
+              RowBox[{"-", "60"}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"105", ",", "50"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", "50"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", 
+              RowBox[{"-", "60"}]}], "}"}]}], "}"}], "]"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"gr2", "[", "]"}], " ", ":=", " ", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", ".4"}], " ", "r"}], ",", 
+             RowBox[{
+              RowBox[{"-", ".3"}], "r"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", ".4"}], " ", "r"}], ",", 
+             RowBox[{"0", "r"}]}], "}"}]}], "]"}], " ", ",", " ", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", ".4"}], " ", "r"}], ",", 
+             RowBox[{".3", "r"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", ".4"}], " ", "r"}], ",", 
+             RowBox[{".60", "r"}]}], "}"}]}], "]"}], " ", ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"-", ".4"}], " ", "r"}], ",", 
+             RowBox[{".9", "r"}]}], "}"}]}], "]"}], "  ", ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{".4", "r"}], ",", 
+             RowBox[{
+              RowBox[{"-", ".3"}], "r"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{".4", "r"}], ",", 
+             RowBox[{"0", "r"}]}], "}"}]}], "]"}], " ", ",", " ", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{".4", "r"}], ",", 
+             RowBox[{".3", "r"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{".4", "r"}], ",", 
+             RowBox[{".6", "r"}]}], "}"}]}], "]"}], " ", ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{".4", "r"}], ",", 
+             RowBox[{".9", "r"}]}], "}"}]}], "]"}], "  ", ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.2", "r"}], ",", 
+             RowBox[{
+              RowBox[{"-", ".3"}], "r"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.2", "r"}], ",", 
+             RowBox[{"0", "r"}]}], "}"}]}], "]"}], " ", ",", " ", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.2", "r"}], ",", 
+             RowBox[{".3", "r"}]}], "}"}]}], "]"}], ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.2", "r"}], ",", 
+             RowBox[{".6", "r"}]}], "}"}]}], "]"}], " ", ",", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Support", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.2", "r"}], ",", 
+             RowBox[{".9", "r"}]}], "}"}]}], "]"}], ",", " ", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", 
+              RowBox[{"-", "60"}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"75", ",", 
+              RowBox[{"-", "60"}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"75", ",", "50"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", "50"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", 
+              RowBox[{"-", "60"}]}], "}"}]}], "}"}], "]"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"gr3", "[", "]"}], " ", ":=", " ", 
+       RowBox[{"{", " ", 
+        RowBox[{
+         RowBox[{"Face", "[", "]"}], ",", " ", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Face", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"1.9", "r"}], ",", "0"}], "}"}]}], "]"}], "  ", ",", " ", 
+         RowBox[{"Translate", "[", 
+          RowBox[{
+           RowBox[{"Face", "[", "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"3.8", "r"}], ",", "0"}], "}"}]}], "]"}], "  ", ",", 
+         RowBox[{"Line", "[", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", 
+              RowBox[{"-", "60"}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"255", ",", 
+              RowBox[{"-", "60"}]}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"255", ",", "50"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", "50"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "45"}], ",", 
+              RowBox[{"-", "60"}]}], "}"}]}], "}"}], "]"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"AbsolutePointSize", "[", "6", "]"}], ",", 
+           RowBox[{"Point", "[", 
+            RowBox[{"{", 
+             RowBox[{"0", ",", "0"}], "}"}], "]"}], ",", " ", 
+           RowBox[{"SupportDisplay", "[", 
+            RowBox[{
+             RowBox[{"Line", "[", "slotside", "]"}], ",", "  ", 
+             RowBox[{
+              RowBox[{"-", "r"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"foffset", " ", "+", " ", "1", " ", "-", " ", "s"}], 
+               ")"}]}]}], "]"}], ",", " ", 
+           RowBox[{"SupportArms", "[", 
+            RowBox[{
+             RowBox[{
+             "foffset", " ", "+", " ", "1", " ", "-", "s", " ", "+", " ", 
+              RowBox[{"tabwidth", "/", "2"}], " ", "+", " ", "ishoulder"}], 
+             ",", " ", 
+             RowBox[{"foffset", " ", "+", " ", "1", "-", "s", " ", "-", " ", 
+              RowBox[{"tabwidth", " ", "/", "2"}], " ", "-", " ", 
+              "oshoulder"}], ",", "r", " ", ",", " ", "0", ",", " ", "0"}], 
+            "]"}], ",", 
+           RowBox[{"Point", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "r"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"foffset", " ", "+", " ", "1", "-", "s"}], ")"}]}], 
+              ",", " ", "0"}], "}"}], "]"}], ",", " ", 
+           RowBox[{"Point", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "r"}], " ", "foffset"}], ",", " ", "0"}], "}"}], 
+            "]"}], ",", " ", 
+           RowBox[{"Point", "[", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"r", " ", 
+               RowBox[{"(", 
+                RowBox[{"foffset", " ", "+", " ", "1", " ", "-", "s"}], 
+                ")"}]}], ")"}], 
+             RowBox[{"{", " ", 
+              RowBox[{
+               RowBox[{"1", "/", 
+                RowBox[{"Sqrt", "[", "5", "]"}]}], ",", " ", 
+               RowBox[{"-", 
+                RowBox[{"Sin", "[", 
+                 RowBox[{"ArcCos", "[", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "/", 
+                   RowBox[{"Sqrt", "[", "5", "]"}]}], "]"}], "]"}]}]}], 
+              "}"}]}], "]"}]}], "\[IndentingNewLine]", "}"}], 
+         "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"AbsolutePointSize", "[", "6", "]"}], ",", " ", "White", 
+            ",", " ", 
+            RowBox[{"EdgeForm", "[", "Black", "]"}], ",", " ", 
+            "\[IndentingNewLine]", 
+            RowBox[{"Polygon", "[", "\[IndentingNewLine]", 
+             RowBox[{"r", "  ", 
+              RowBox[{"Vertices", "[", "Pentagon", "]"}]}], " ", 
+             "\[IndentingNewLine]", "]"}], ",", " ", "\[IndentingNewLine]", 
+            "Black", ",", " ", 
+            RowBox[{"Circle", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0", ",", "0"}], "}"}], ",", "r"}], "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"SlotDisplay", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Line", "[", "slot", "]"}], ",", 
+                RowBox[{"Line", "[", "slotshoulders", "]"}]}], "}"}], ",", 
+              " ", 
+              RowBox[{"r", " ", "s", " ", "L3"}]}], "]"}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{"Point", " ", "/@", 
+             RowBox[{"(", 
+              RowBox[{"r", " ", "s", " ", "L3"}], ")"}]}]}], 
+           "\[IndentingNewLine]", "}"}], ",", " ", "\[IndentingNewLine]", 
+          RowBox[{"AxesStyle", "\[Rule]", " ", "Gray"}], ",", " ", 
+          RowBox[{"Axes", " ", "\[Rule]", " ", "True"}]}], 
+         "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{
+          RowBox[{"Face", "[", "]"}], ",", " ", 
+          RowBox[{"Axes", " ", "\[Rule]", " ", "True"}]}], "]"}], ",", " ", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{"Support", "[", "]"}], "]"}], ",", "  ", 
+        RowBox[{"Graphics", "[", 
+         RowBox[{"gr", "[", "]"}], "]"}]}], "\[IndentingNewLine]", "}"}]}], 
+     ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"r", ",", " ", "50.0", ",", " ", "\"\<Face Radius (mm)\>\""}],
+         "}"}], ",", " ", "1.0", ",", "120.0", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", " ", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"s", ",", " ", ".80", ",", " ", "\"\<Slot Position\>\""}], 
+        "}"}], ",", "0.0", ",", "1.0", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", " ", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"tsupport", ",", " ", 
+         RowBox[{"(*", ".062", "*)"}], 
+         RowBox[{".167", " ", "25.4"}], ",", " ", 
+         "\"\<Support Material Thickness (mm)\>\""}], "}"}], ",", " ", "0.0", 
+       ",", " ", "10.0", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", " ", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "tabwidth", ",", " ", "0.2", ",", " ", "\"\<Tab Length (%)\>\""}], 
+        "}"}], ",", " ", "0.0", ",", " ", "1.0", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", " ", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"tface", ",", " ", 
+         RowBox[{".167", " ", "25.4"}], ",", " ", 
+         "\"\<Face Material Thickness (mm)\>\""}], "}"}], ",", " ", "0.0", 
+       ",", " ", "10.0", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "numsupports", ",", "1", ",", "\"\<Number of supports per side\>\""}],
+         "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"1", " ", "\[Rule]", " ", "\"\<single support\>\""}], ",", 
+         " ", 
+         RowBox[{"2", " ", "\[Rule]", " ", "\"\<dual supports\>\""}]}], "}"}],
+        ",", " ", 
+       RowBox[{"ControlType", "\[Rule]", "RadioButtonBar"}], ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "supoffset", ",", " ", ".58", ",", " ", 
+         "\"\<Distance between supports (only if supports > 1) as % of \
+r\>\""}], "}"}], ",", "0.0", ",", "1.0", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "ishoulder", ",", " ", ".03", ",", " ", 
+         "\"\<Inner shoulder size (%)\>\""}], "}"}], ",", "0.0", ",", "1.0", 
+       ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "oshoulder", ",", " ", ".03", ",", " ", 
+         "\"\<Outer shoulder size (%)\>\""}], "}"}], ",", "0.0", ",", "1.0", 
+       ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+        "foffset", ",", " ", ".1", ",", " ", "\"\<Face Offset (%)\>\""}], 
+        "}"}], ",", " ", "0.0", ",", "1.0", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"kerf", ",", " ", 
+         RowBox[{"0", " ", 
+          RowBox[{"1", "/", "128"}], " ", "*", " ", 
+          RowBox[{"25.4", "/", "3"}]}], ",", " ", 
+         "\"\<Cut thickness (mm)\>\""}], "}"}], ",", " ", "0.0", ",", " ", 
+       "1.0", ",", " ", 
+       RowBox[{"Appearance", " ", "\[Rule]", " ", "\"\<Labeled\>\""}]}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{"Button", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"Tooltip", "[", 
+        RowBox[{
+        "\"\<Publish\>\"", ",", " ", 
+         "\"\<Click to create an expression to create the file\>\""}], "]"}], 
+       ",", 
+       RowBox[{"CellPrint", "[", "\[IndentingNewLine]", 
+        RowBox[{"CellPrint", "[", "\[IndentingNewLine]", 
+         RowBox[{"Cell", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"BoxData", "[", "\[IndentingNewLine]", 
+            RowBox[{"RowBox", "[", "\[IndentingNewLine]", 
+             RowBox[{"{", 
+              RowBox[{
+              "\"\<Export\>\"", ",", "\"\<[\>\"", ",", "\[IndentingNewLine]", 
+               
+               RowBox[{"RowBox", "[", "\[IndentingNewLine]", 
+                RowBox[{"{", 
+                 RowBox[{
+                 "\"\<\\\"\\<fileName.eps\\>\\\"\>\"", ",", "\"\<,\>\"", ",", 
+                  
+                  RowBox[{"ToBoxes", "[", "\[IndentingNewLine]", 
+                   RowBox[{"Style", "[", 
+                    RowBox[{
+                    RowBox[{"Show", "[", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"Graphics", "[", 
+                    RowBox[{"gr3", "[", "]"}], "]"}], "}"}], "/.", 
+                    RowBox[{"{", 
+                    RowBox[{"_AbsoluteThickness", "\[RuleDelayed]", 
+                    RowBox[{"AbsoluteThickness", "[", 
+                    RowBox[{"1", "/", "2000"}], "]"}]}], "}"}]}], ",", 
+                    "\[IndentingNewLine]", 
+                    RowBox[{"ImageSize", " ", "\[Rule]", " ", 
+                    RowBox[{
+                    RowBox[{"72", "/", "25.4"}], "  ", "300", " ", "2", " ", 
+                    RowBox[{"1", "/", "1.62"}], " ", 
+                    RowBox[{"157.5", "/", "151"}], " ", "1.01"}]}]}], "]"}], 
+                    ",", "\[IndentingNewLine]", 
+                    RowBox[{"Antialiasing", "\[Rule]", "False"}]}], "]"}], 
+                   "]"}]}], "}"}], "]"}], ",", "\"\<]\>\""}], "}"}], "]"}], 
+            "]"}], ",", "\"\<Input\>\""}], "\[IndentingNewLine]", "]"}], 
+         "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", "]"}]}], 
+      "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.481541399941515*^9, 3.481541453376062*^9}, {
+   3.4815416581726637`*^9, 3.4815416955499163`*^9}, {3.481541736215082*^9, 
+   3.48154176673617*^9}, {3.481542165778514*^9, 3.481542226283554*^9}, {
+   3.4815422852794952`*^9, 3.4815422902531776`*^9}, {3.481542334096065*^9, 
+   3.4815424858979673`*^9}, {3.481542542221291*^9, 3.481542598197102*^9}, {
+   3.481543080935503*^9, 3.4815431636104803`*^9}, {3.4815432036757097`*^9, 
+   3.481543283124899*^9}, {3.4815564077879753`*^9, 3.481556527103116*^9}, {
+   3.481557401020187*^9, 3.48155751125319*^9}, {3.48156093335168*^9, 
+   3.481561035496365*^9}, 3.481561069745665*^9, {3.481561133907778*^9, 
+   3.48156114185852*^9}, {3.4815611744533043`*^9, 3.481561213252907*^9}, {
+   3.481561257528187*^9, 3.481561279422076*^9}, {3.481561369192335*^9, 
+   3.481561398680303*^9}, {3.481561444976054*^9, 3.48156163357614*^9}, {
+   3.481561671899054*^9, 3.4815617392926683`*^9}, {3.481561794684546*^9, 
+   3.4815618507497263`*^9}, {3.481561923633539*^9, 3.481561926279421*^9}, {
+   3.4815620986852694`*^9, 3.48156214927562*^9}, {3.4815647041890078`*^9, 
+   3.481564789121406*^9}, {3.4815648460202503`*^9, 3.481564879850371*^9}, {
+   3.481564927877634*^9, 3.4815649380301943`*^9}, {3.48156504930414*^9, 
+   3.481565130113432*^9}, {3.481565229260592*^9, 3.481565229957131*^9}, 
+   3.48156527109619*^9, {3.481565330608411*^9, 3.481565368680241*^9}, {
+   3.481565417707013*^9, 3.4815654180490637`*^9}, {3.481565458763906*^9, 
+   3.481565472491107*^9}, {3.48156554479101*^9, 3.481565548637517*^9}, 
+   3.481565624736171*^9, {3.481565780511918*^9, 3.481565859479557*^9}, {
+   3.481565893547139*^9, 3.48156596758167*^9}, {3.481566052909762*^9, 
+   3.48156625109481*^9}, {3.4815662881691303`*^9, 3.4815663773403463`*^9}, {
+   3.4815664540796423`*^9, 3.481566454406115*^9}, {3.48156651282615*^9, 
+   3.481566516769153*^9}, {3.481566557969286*^9, 3.481566559542457*^9}, {
+   3.481566604588006*^9, 3.4815667798803062`*^9}, {3.481566825265563*^9, 
+   3.481566997544857*^9}, {3.4815670317454653`*^9, 3.481567076528249*^9}, {
+   3.481567164387993*^9, 3.4815671712840433`*^9}, {3.481567217797616*^9, 
+   3.481567250063074*^9}, {3.481567393489006*^9, 3.481567522980887*^9}, {
+   3.481567564608964*^9, 3.481567664585517*^9}, {3.481567696667588*^9, 
+   3.481567697141221*^9}, {3.481567733067575*^9, 3.481567745476233*^9}, {
+   3.4815678115562563`*^9, 3.481567835077026*^9}, {3.481567956883184*^9, 
+   3.481567989041656*^9}, {3.481568019257689*^9, 3.481568033474616*^9}, {
+   3.481568095542461*^9, 3.4815681120432673`*^9}, {3.48156833049759*^9, 
+   3.4815683367269173`*^9}, {3.481568649911779*^9, 3.481568677825036*^9}, 
+   3.4815687118505783`*^9, 3.481568935430315*^9, {3.48164911960953*^9, 
+   3.4816493351849213`*^9}, {3.481649401588522*^9, 3.4816495152819157`*^9}, {
+   3.481649626878716*^9, 3.481649631805665*^9}, {3.481649667143447*^9, 
+   3.4816496705821466`*^9}, {3.481650526052937*^9, 3.481650549988161*^9}, {
+   3.481650586336067*^9, 3.481650882922821*^9}, {3.481650953100264*^9, 
+   3.481651044173174*^9}, {3.4816511339129887`*^9, 3.481651167863752*^9}, {
+   3.481651268259536*^9, 3.481651320550847*^9}, {3.481651545077712*^9, 
+   3.481651620687471*^9}, {3.4816516705059958`*^9, 3.481651674943823*^9}, {
+   3.481652029850375*^9, 3.4816520623610277`*^9}, {3.481652118253598*^9, 
+   3.4816521201594667`*^9}, {3.4816528141730967`*^9, 3.481652936032179*^9}, 
+   3.4816530178593597`*^9, {3.481653378108588*^9, 3.481653392244594*^9}, {
+   3.481678131419611*^9, 3.481678155521822*^9}, {3.481678191665251*^9, 
+   3.481678253363572*^9}, 3.4816783025012817`*^9, {3.4816783546804113`*^9, 
+   3.481678436979911*^9}, {3.481678514711092*^9, 3.481678724767235*^9}, {
+   3.481678832085401*^9, 3.481678857529162*^9}, {3.481678996522625*^9, 
+   3.4816790684263287`*^9}, {3.481679155402895*^9, 3.481679176476033*^9}, {
+   3.481679218102871*^9, 3.4816792193986893`*^9}, 3.4816792794124002`*^9, {
+   3.481679317826272*^9, 3.481679414161771*^9}, {3.481679488002219*^9, 
+   3.481679488451475*^9}, {3.4816795347660103`*^9, 3.481679560895858*^9}, {
+   3.481679602292624*^9, 3.4816797176247663`*^9}, {3.481679863885434*^9, 
+   3.481679908822392*^9}, {3.481679967896702*^9, 3.481679985654304*^9}, {
+   3.4816800292016172`*^9, 3.481680044436923*^9}, {3.482666600383856*^9, 
+   3.482666610082882*^9}, {3.482666648035754*^9, 3.4826666588813553`*^9}, {
+   3.482666831757702*^9, 3.4826668384514523`*^9}, {3.482683451911975*^9, 
+   3.4826834865028067`*^9}, {3.4826835313644114`*^9, 3.482683560177127*^9}, {
+   3.482683697661165*^9, 3.4826837602649183`*^9}, {3.4826838628105164`*^9, 
+   3.482683921122414*^9}, {3.482683986181294*^9, 3.482684011941307*^9}, {
+   3.482684808977625*^9, 3.482684837751362*^9}, {3.482684888329074*^9, 
+   3.4826850247298613`*^9}, {3.482685060772814*^9, 3.482685095462225*^9}, {
+   3.48268515088765*^9, 3.482685162943246*^9}, {3.482685245685402*^9, 
+   3.4826852541246862`*^9}, {3.482685352085824*^9, 3.4826854462838306`*^9}, {
+   3.482685478050782*^9, 3.4826855030652637`*^9}, {3.482685533227706*^9, 
+   3.482685661645483*^9}, {3.482685772600905*^9, 3.48268582574397*^9}, {
+   3.4826858696899767`*^9, 3.4826858954981728`*^9}, {3.4826859428106947`*^9, 
+   3.48268599681505*^9}, {3.482686041827435*^9, 3.482686045472797*^9}, {
+   3.482686582294194*^9, 3.4826866409681463`*^9}, {3.482686744151032*^9, 
+   3.482686745353743*^9}, {3.4826869839412537`*^9, 3.482686987834071*^9}, {
+   3.482687031619925*^9, 3.4826870459647713`*^9}, {3.482687122008032*^9, 
+   3.482687142060976*^9}, {3.4826872806727743`*^9, 3.4826873941838408`*^9}, {
+   3.4826875161370583`*^9, 3.4826875843867407`*^9}, {3.482687617123225*^9, 
+   3.482687644342601*^9}, {3.4826877920739927`*^9, 3.482687797184936*^9}, {
+   3.482687841830324*^9, 3.482687926685813*^9}, {3.482688086866889*^9, 
+   3.482688087289303*^9}, {3.482688571712387*^9, 3.482688783190668*^9}, {
+   3.4826888482481728`*^9, 3.4826888531748943`*^9}, {3.4826889189696207`*^9, 
+   3.482688938760976*^9}, {3.482689007815858*^9, 3.4826890096255713`*^9}, {
+   3.482689065643998*^9, 3.48268906718855*^9}, {3.4826891224217043`*^9, 
+   3.482689158310792*^9}, {3.482691380700741*^9, 3.4826913888791122`*^9}, {
+   3.4826914950407133`*^9, 3.48269149797138*^9}, {3.48269340667345*^9, 
+   3.4826935062660923`*^9}, 3.482693572712461*^9, {3.4826936061705217`*^9, 
+   3.482693616072124*^9}, {3.482693686328257*^9, 3.482693691864952*^9}, {
+   3.48269373535425*^9, 3.482693736490076*^9}, {3.4826937965031757`*^9, 
+   3.482693820835932*^9}, {3.482694188105609*^9, 3.482694195862351*^9}, {
+   3.48269484201549*^9, 3.482694933856835*^9}, {3.482696134140244*^9, 
+   3.482696183461837*^9}, {3.482696213664212*^9, 3.482696253946187*^9}, {
+   3.482764509511746*^9, 3.482764549299816*^9}, {3.482764980523243*^9, 
+   3.4827650453110533`*^9}, {3.4827651930982733`*^9, 
+   3.4827652225280313`*^9}, {3.48276542830792*^9, 3.4827654452509747`*^9}, {
+   3.4827665748671618`*^9, 3.482766576993359*^9}, {3.482766628251863*^9, 
+   3.4827666344580717`*^9}, {3.482767179370015*^9, 3.482767234624323*^9}, 
+   3.482767294999898*^9, {3.4827673477243*^9, 3.482767356693852*^9}, {
+   3.48276738781826*^9, 3.482767396467186*^9}, {3.482767455717317*^9, 
+   3.482767542238433*^9}, {3.482767610737969*^9, 3.4827676234962387`*^9}, {
+   3.482767737618506*^9, 3.4827677406025047`*^9}, {3.482767855612681*^9, 
+   3.48276785798138*^9}, {3.482767959049387*^9, 3.482768038828329*^9}, {
+   3.482768086156096*^9, 3.482768088106618*^9}, {3.4827681232536707`*^9, 
+   3.482768141463294*^9}, {3.482768175430931*^9, 3.48276819241702*^9}, {
+   3.482768272755032*^9, 3.482768295989753*^9}, 3.482768327168371*^9, {
+   3.4827683621452312`*^9, 3.482768393188394*^9}, {3.4827684693614073`*^9, 
+   3.482768590538307*^9}, {3.482768656200736*^9, 3.482768700031375*^9}, {
+   3.4827687383004217`*^9, 3.482768770192387*^9}, {3.48276880121873*^9, 
+   3.48276881554097*^9}, {3.482768910858029*^9, 3.4827689400490017`*^9}, {
+   3.4827712697989483`*^9, 3.48277127079383*^9}, {3.4827716972969*^9, 
+   3.482771734420024*^9}, 3.482771779366372*^9, {3.482771821946813*^9, 
+   3.482771860712229*^9}, {3.482773940417077*^9, 3.482773955564198*^9}, {
+   3.482774006322722*^9, 3.4827740300716867`*^9}, 3.4827740681538897`*^9, {
+   3.482774176242156*^9, 3.482774205993331*^9}, {3.482774353202854*^9, 
+   3.482774415954896*^9}, {3.48277445497062*^9, 3.482774479633236*^9}, {
+   3.482774749071268*^9, 3.482774768950254*^9}, {3.482774798980729*^9, 
+   3.482774836145059*^9}, {3.48277486887566*^9, 3.482774943906163*^9}, {
+   3.482775012559436*^9, 3.482775096762105*^9}, {3.482775165211401*^9, 
+   3.4827752343014307`*^9}, {3.482775321468961*^9, 3.4827753235658216`*^9}, {
+   3.482775369059658*^9, 3.482775430132986*^9}, {3.482775465309116*^9, 
+   3.482775476615996*^9}, 3.4827755157790337`*^9, {3.482775572714974*^9, 
+   3.4827755776455603`*^9}, {3.482775733780204*^9, 3.482775850653493*^9}, {
+   3.482775934154545*^9, 3.482775941802929*^9}, {3.482775984022085*^9, 
+   3.482776000929113*^9}, 3.482776589137706*^9, {3.482776711156226*^9, 
+   3.482776717824032*^9}, {3.482776792627563*^9, 3.482776797612349*^9}, {
+   3.482776843140217*^9, 3.482776870808526*^9}, {3.482776977823146*^9, 
+   3.482776984139653*^9}, {3.482777293881563*^9, 3.482777444051206*^9}, {
+   3.48277747643718*^9, 3.482777560295282*^9}, {3.482777896480855*^9, 
+   3.482777896719513*^9}, {3.482778103329575*^9, 3.482778133026855*^9}, {
+   3.482778508276306*^9, 3.482778509035685*^9}, {3.482778567214735*^9, 
+   3.4827786799656773`*^9}, {3.483109651488812*^9, 3.48310983018121*^9}, {
+   3.483109875593956*^9, 3.483109960929964*^9}, {3.48311000025028*^9, 
+   3.483110020535747*^9}, {3.483110136363326*^9, 3.483110200602786*^9}, {
+   3.483110255311371*^9, 3.483110255573797*^9}, {3.483110288632227*^9, 
+   3.48311030574561*^9}, {3.4831103558556967`*^9, 3.48311038820951*^9}, {
+   3.483110426109605*^9, 3.483110450373105*^9}, {3.483110586834464*^9, 
+   3.4831106441961327`*^9}, {3.4831106834767714`*^9, 3.483110710936837*^9}, {
+   3.483110880002378*^9, 3.483110880158399*^9}, {3.483112728366622*^9, 
+   3.48311273374422*^9}, {3.483112919638891*^9, 3.483112948064145*^9}, {
+   3.4831131009569073`*^9, 3.4831131504504642`*^9}, {3.4831151570985823`*^9, 
+   3.483115157764687*^9}, {3.483115212950367*^9, 3.483115215830213*^9}, {
+   3.483115260841847*^9, 3.483115264467958*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`foffset$$ = 0.1, $CellContext`ishoulder$$ = 
+    0.03, $CellContext`kerf$$ = 0, $CellContext`numsupports$$ = 
+    1, $CellContext`oshoulder$$ = 0.03, $CellContext`r$$ = 
+    50., $CellContext`s$$ = 0.8, $CellContext`supoffset$$ = 
+    0.58, $CellContext`tabwidth$$ = 0.2, $CellContext`tface$$ = 
+    4.2418, $CellContext`tsupport$$ = 4.2418, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`r$$], 50., "Face Radius (mm)"}, 1., 120.}, {{
+       Hold[$CellContext`s$$], 0.8, "Slot Position"}, 0., 1.}, {{
+       Hold[$CellContext`tsupport$$], 4.2418, 
+       "Support Material Thickness (mm)"}, 0., 10.}, {{
+       Hold[$CellContext`tabwidth$$], 0.2, "Tab Length (%)"}, 0., 1.}, {{
+       Hold[$CellContext`tface$$], 4.2418, "Face Material Thickness (mm)"}, 
+      0., 10.}, {{
+       Hold[$CellContext`numsupports$$], 1, "Number of supports per side"}, {
+      1 -> "single support", 2 -> "dual supports"}}, {{
+       Hold[$CellContext`supoffset$$], 0.58, 
+       "Distance between supports (only if supports > 1) as % of r"}, 0., 
+      1.}, {{
+       Hold[$CellContext`ishoulder$$], 0.03, "Inner shoulder size (%)"}, 0., 
+      1.}, {{
+       Hold[$CellContext`oshoulder$$], 0.03, "Outer shoulder size (%)"}, 0., 
+      1.}, {{
+       Hold[$CellContext`foffset$$], 0.1, "Face Offset (%)"}, 0., 1.}, {{
+       Hold[$CellContext`kerf$$], 0, "Cut thickness (mm)"}, 0., 1.}, {
+      Hold[
+       Button[
+        Tooltip[
+        "Publish", "Click to create an expression to create the file"], 
+        CellPrint[
+         CellPrint[
+          Cell[
+           BoxData[
+            RowBox[{"Export", "[", 
+              RowBox[{"\"fileName.eps\"", ",", 
+                ToBoxes[
+                 Style[
+                  Show[
+                   ReplaceAll[{
+                    Graphics[
+                    $CellContext`gr3[]]}, {
+                    Blank[AbsoluteThickness] :> AbsoluteThickness[1/2000]}], 
+                   ImageSize -> (72/25.4) 300 2 (1/1.62) (157.5/151) 1.01], 
+                  Antialiasing -> False]]}], "]"}]], "Input"]]]]], 
+      Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
+    385.701171875, {428., 65.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`r$264420$$ = 
+    0, $CellContext`s$264421$$ = 0, $CellContext`tsupport$264422$$ = 
+    0, $CellContext`tabwidth$264423$$ = 0, $CellContext`tface$264424$$ = 
+    0, $CellContext`numsupports$264425$$ = 
+    False, $CellContext`supoffset$264426$$ = 
+    0, $CellContext`ishoulder$264427$$ = 0, $CellContext`oshoulder$264428$$ = 
+    0, $CellContext`foffset$264429$$ = 0, $CellContext`kerf$264430$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`foffset$$ = 0.1, $CellContext`ishoulder$$ = 
+        0.03, $CellContext`kerf$$ = 0, $CellContext`numsupports$$ = 
+        1, $CellContext`oshoulder$$ = 0.03, $CellContext`r$$ = 
+        50., $CellContext`s$$ = 0.8, $CellContext`supoffset$$ = 
+        0.58, $CellContext`tabwidth$$ = 0.2, $CellContext`tface$$ = 
+        4.2418, $CellContext`tsupport$$ = 4.2418}, "ControllerVariables" :> {
+        Hold[$CellContext`r$$, $CellContext`r$264420$$, 0], 
+        Hold[$CellContext`s$$, $CellContext`s$264421$$, 0], 
+        Hold[$CellContext`tsupport$$, $CellContext`tsupport$264422$$, 0], 
+        Hold[$CellContext`tabwidth$$, $CellContext`tabwidth$264423$$, 0], 
+        Hold[$CellContext`tface$$, $CellContext`tface$264424$$, 0], 
+        Hold[$CellContext`numsupports$$, $CellContext`numsupports$264425$$, 
+         False], 
+        Hold[$CellContext`supoffset$$, $CellContext`supoffset$264426$$, 0], 
+        Hold[$CellContext`ishoulder$$, $CellContext`ishoulder$264427$$, 0], 
+        Hold[$CellContext`oshoulder$$, $CellContext`oshoulder$264428$$, 0], 
+        Hold[$CellContext`foffset$$, $CellContext`foffset$264429$$, 0], 
+        Hold[$CellContext`kerf$$, $CellContext`kerf$264430$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, 
+      "Body" :> ($CellContext`slot = {{(-$CellContext`tsupport$$)/2 + 
+           0.5 $CellContext`kerf$$, (-$CellContext`r$$) \
+($CellContext`tabwidth$$/2) + 
+           0.5 $CellContext`kerf$$}, {$CellContext`tsupport$$/2 - 
+           0.5 $CellContext`kerf$$, (-$CellContext`r$$) \
+($CellContext`tabwidth$$/2) + 
+           0.5 $CellContext`kerf$$}, {$CellContext`tsupport$$/2 - 
+           0.5 $CellContext`kerf$$, $CellContext`r$$ ($CellContext`tabwidth$$/
+             2) - 0.5 $CellContext`kerf$$}, {(-$CellContext`tsupport$$)/2 + 
+           0.5 $CellContext`kerf$$, $CellContext`r$$ ($CellContext`tabwidth$$/
+             2) - 0.5 $CellContext`kerf$$}, {(-$CellContext`tsupport$$)/2 + 
+           0.5 $CellContext`kerf$$, (-$CellContext`r$$) \
+($CellContext`tabwidth$$/2) + 
+           0.5 $CellContext`kerf$$}}; $CellContext`slotshoulders = \
+{{(-$CellContext`tsupport$$)/
+           2, (-$CellContext`r$$) ($CellContext`tabwidth$$/
+             2 + $CellContext`ishoulder$$)}, {(-$CellContext`tsupport$$)/
+           2, $CellContext`r$$ ($CellContext`tabwidth$$/
+             2 + $CellContext`oshoulder$$)}, {$CellContext`tsupport$$/
+           2, $CellContext`r$$ ($CellContext`tabwidth$$/
+             2 + $CellContext`oshoulder$$)}, {$CellContext`tsupport$$/
+           2, (-$CellContext`r$$) ($CellContext`tabwidth$$/
+             2 + $CellContext`ishoulder$$)}, {(-$CellContext`tsupport$$)/
+           2, (-$CellContext`r$$) ($CellContext`tabwidth$$/
+             2 + $CellContext`ishoulder$$)}}; $CellContext`slotside = \
+{{(-$CellContext`r$$) ($CellContext`tabwidth$$/2 + $CellContext`ishoulder$$), 
+           0}, {(-$CellContext`r$$) ($CellContext`tabwidth$$/2) - 
+           0.5 $CellContext`kerf$$, 
+           0}, {(-$CellContext`r$$) ($CellContext`tabwidth$$/2) - 
+           0.5 $CellContext`kerf$$, $CellContext`tface$$ + \
+$CellContext`kerf$$}, {$CellContext`r$$ ($CellContext`tabwidth$$/2) + 
+           0.5 $CellContext`kerf$$, $CellContext`tface$$ + \
+$CellContext`kerf$$}, {$CellContext`r$$ ($CellContext`tabwidth$$/2) + 
+           0.5 $CellContext`kerf$$, 
+           0}, {$CellContext`r$$ ($CellContext`tabwidth$$/
+             2 + $CellContext`oshoulder$$), 0}}; $CellContext`FaceEdge[
+          Pattern[$CellContext`p1, 
+           Blank[]], 
+          Pattern[$CellContext`p2, 
+           Blank[]]] := 
+        Line[{$CellContext`p1, $CellContext`p2}]; $CellContext`FaceEdges[
+          Pattern[$CellContext`r, 
+           Blank[]]] := ListConvolve[{$CellContext`r, $CellContext`r}, 
+          Polytopes`Vertices[Polytopes`Pentagon], 2, 
+          Polytopes`Vertices[Polytopes`Pentagon], 
+          Times, $CellContext`FaceEdge, 1]; $CellContext`Face[] := {
+          AbsoluteThickness[1], 
+          $CellContext`FaceEdges[$CellContext`r$$], 
+          $CellContext`SlotDisplay[
+           Line[
+            
+            Map[# + {
+              0.5 $CellContext`r$$ $CellContext`supoffset$$, 
+               0}& , $CellContext`slot]], $CellContext`r$$ $CellContext`s$$ \
+$CellContext`L3], 
+          $CellContext`SlotDisplay[
+           Line[
+            
+            Map[# + {(-0.5) $CellContext`r$$ $CellContext`supoffset$$, 
+               0}& , $CellContext`slot]], $CellContext`r$$ $CellContext`s$$ \
+$CellContext`L3], 
+          Circle[{0, 0}, 0.55 $CellContext`r$$]}; $CellContext`Support[] := {
+          AbsoluteThickness[1], 
+          $CellContext`SupportDisplay[
+           
+           Line[$CellContext`slotside], (-$CellContext`r$$) \
+($CellContext`foffset$$ + 1 - $CellContext`s$$)], 
+          $CellContext`SupportArms[$CellContext`foffset$$ + 
+           1 - $CellContext`s$$ + $CellContext`tabwidth$$/
+            2 + $CellContext`ishoulder$$, $CellContext`foffset$$ + 
+           1 - $CellContext`s$$ - $CellContext`tabwidth$$/
+           2 - $CellContext`oshoulder$$, $CellContext`r$$, 0, 
+           0]}; $CellContext`gr1[] := {
+          $CellContext`Face[], 
+          Translate[
+           $CellContext`Support[], {
+           1.8 $CellContext`r$$, (-0.7) $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.8 $CellContext`r$$, (-0.3) $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.8 $CellContext`r$$, 0.1 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.8 $CellContext`r$$, 0.5 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.8 $CellContext`r$$, 0.9 $CellContext`r$$}], 
+          
+          Line[{{-45, -60}, {105, -60}, {105, 50}, {-45, 
+           50}, {-45, -60}}]}; $CellContext`gr2[] := {
+          Translate[
+           $CellContext`Support[], {(-0.4) $CellContext`r$$, (-0.3) \
+$CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {(-0.4) $CellContext`r$$, 
+            0 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {(-0.4) $CellContext`r$$, 
+            0.3 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {(-0.4) $CellContext`r$$, 
+            0.6 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {(-0.4) $CellContext`r$$, 
+            0.9 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           0.4 $CellContext`r$$, (-0.3) $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           0.4 $CellContext`r$$, 0 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           0.4 $CellContext`r$$, 0.3 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           0.4 $CellContext`r$$, 0.6 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           0.4 $CellContext`r$$, 0.9 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.2 $CellContext`r$$, (-0.3) $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.2 $CellContext`r$$, 0 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.2 $CellContext`r$$, 0.3 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.2 $CellContext`r$$, 0.6 $CellContext`r$$}], 
+          Translate[
+           $CellContext`Support[], {
+           1.2 $CellContext`r$$, 0.9 $CellContext`r$$}], 
+          
+          Line[{{-45, -60}, {75, -60}, {75, 50}, {-45, 
+           50}, {-45, -60}}]}; $CellContext`gr3[] := {
+          $CellContext`Face[], 
+          Translate[
+           $CellContext`Face[], {1.9 $CellContext`r$$, 0}], 
+          Translate[
+           $CellContext`Face[], {3.8 $CellContext`r$$, 0}], 
+          Line[{{-45, -60}, {255, -60}, {255, 50}, {-45, 50}, {-45, -60}}]}; {
+        
+         Graphics[{
+           AbsolutePointSize[6], 
+           Point[{0, 0}], 
+           $CellContext`SupportDisplay[
+            
+            Line[$CellContext`slotside], (-$CellContext`r$$) \
+($CellContext`foffset$$ + 1 - $CellContext`s$$)], 
+           $CellContext`SupportArms[$CellContext`foffset$$ + 
+            1 - $CellContext`s$$ + $CellContext`tabwidth$$/
+             2 + $CellContext`ishoulder$$, $CellContext`foffset$$ + 
+            1 - $CellContext`s$$ - $CellContext`tabwidth$$/
+            2 - $CellContext`oshoulder$$, $CellContext`r$$, 0, 0], 
+           
+           Point[{(-$CellContext`r$$) ($CellContext`foffset$$ + 
+              1 - $CellContext`s$$), 0}], 
+           Point[{(-$CellContext`r$$) $CellContext`foffset$$, 0}], 
+           
+           Point[($CellContext`r$$ ($CellContext`foffset$$ + 
+              1 - $CellContext`s$$)) {1/Sqrt[5], -Sin[
+                ArcCos[(-1)/Sqrt[5]]]}]}], 
+         Graphics[{
+           AbsolutePointSize[6], White, 
+           EdgeForm[Black], 
+           Polygon[$CellContext`r$$ Polytopes`Vertices[Polytopes`Pentagon]], 
+           Black, 
+           Circle[{0, 0}, $CellContext`r$$], 
+           $CellContext`SlotDisplay[{
+             Line[$CellContext`slot], 
+             
+             Line[$CellContext`slotshoulders]}, $CellContext`r$$ \
+$CellContext`s$$ $CellContext`L3], 
+           Map[Point, $CellContext`r$$ $CellContext`s$$ $CellContext`L3]}, 
+          AxesStyle -> Gray, Axes -> True], 
+         Graphics[
+          $CellContext`Face[], Axes -> True], 
+         Graphics[
+          $CellContext`Support[]], 
+         Graphics[
+          $CellContext`gr[]]}), 
+      "Specifications" :> {{{$CellContext`r$$, 50., "Face Radius (mm)"}, 1., 
+         120., Appearance -> 
+         "Labeled"}, {{$CellContext`s$$, 0.8, "Slot Position"}, 0., 1., 
+         Appearance -> 
+         "Labeled"}, {{$CellContext`tsupport$$, 4.2418, 
+          "Support Material Thickness (mm)"}, 0., 10., Appearance -> 
+         "Labeled"}, {{$CellContext`tabwidth$$, 0.2, "Tab Length (%)"}, 0., 
+         1., Appearance -> 
+         "Labeled"}, {{$CellContext`tface$$, 4.2418, 
+          "Face Material Thickness (mm)"}, 0., 10., Appearance -> 
+         "Labeled"}, {{$CellContext`numsupports$$, 1, 
+          "Number of supports per side"}, {
+         1 -> "single support", 2 -> "dual supports"}, ControlType -> 
+         RadioButtonBar, Appearance -> 
+         "Labeled"}, {{$CellContext`supoffset$$, 0.58, 
+          "Distance between supports (only if supports > 1) as % of r"}, 0., 
+         1., Appearance -> 
+         "Labeled"}, {{$CellContext`ishoulder$$, 0.03, 
+          "Inner shoulder size (%)"}, 0., 1., Appearance -> 
+         "Labeled"}, {{$CellContext`oshoulder$$, 0.03, 
+          "Outer shoulder size (%)"}, 0., 1., Appearance -> 
+         "Labeled"}, {{$CellContext`foffset$$, 0.1, "Face Offset (%)"}, 0., 
+         1., Appearance -> 
+         "Labeled"}, {{$CellContext`kerf$$, 0, "Cut thickness (mm)"}, 0., 1., 
+         Appearance -> "Labeled"}, 
+        Button[
+         Tooltip[
+         "Publish", "Click to create an expression to create the file"], 
+         CellPrint[
+          CellPrint[
+           Cell[
+            BoxData[
+             RowBox[{"Export", "[", 
+               RowBox[{"\"fileName.eps\"", ",", 
+                 ToBoxes[
+                  Style[
+                   Show[
+                    ReplaceAll[{
+                    Graphics[
+                    $CellContext`gr3[]]}, {
+                    Blank[AbsoluteThickness] :> AbsoluteThickness[1/2000]}], 
+                    ImageSize -> (72/25.4) 300 2 (1/1.62) (157.5/151) 1.01], 
+                   Antialiasing -> False]]}], "]"}]], "Input"]]]]}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{1123., {271.84375, 277.15625}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.482777445366214*^9, 3.482777484884965*^9, {3.482777515636939*^9, 
+   3.48277756184536*^9}, {3.482777899353594*^9, 3.48277791566677*^9}, 
+   3.4827781346070127`*^9, 3.482778600645451*^9, {3.482778636021675*^9, 
+   3.482778681949649*^9}, {3.483109801864813*^9, 3.483109831177877*^9}, 
+   3.483109884268042*^9, 3.4831099171370983`*^9, 3.4831099624644537`*^9, 
+   3.4831100220388412`*^9, 3.48311015202181*^9, 3.48311020590445*^9, 
+   3.483110257204265*^9, 3.48311030709938*^9, 3.483110389679184*^9, {
+   3.483110434583394*^9, 3.48311046205445*^9}, {3.483110632389234*^9, 
+   3.483110645575045*^9}, 3.483110712675297*^9, 3.4831108818755198`*^9, 
+   3.483112735205307*^9, {3.4831129253039827`*^9, 3.483112949655499*^9}, {
+   3.48311310330578*^9, 3.483113152144957*^9}, 3.483115159668997*^9, 
+   3.4831152177296667`*^9, 3.483115265686574*^9}]
+}, Open  ]]
+},
+WindowSize->{1243, 641},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+ShowSelection->True,
+FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 43323, 1005, 1243, "Input"],
+Cell[43893, 1029, 16242, 335, 567, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/svn/!svn/ver/152/trunk/machine
+END
+machine.dwg
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/152/trunk/machine/machine.dwg
+END
+lowcost_spindle_mount.svg
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/144/trunk/machine/lowcost_spindle_mount.svg
+END
+cnc.scad
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/120/trunk/machine/cnc.scad
+END
+lowcost_spindle_mount.pdf
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/145/trunk/machine/lowcost_spindle_mount.pdf
+END

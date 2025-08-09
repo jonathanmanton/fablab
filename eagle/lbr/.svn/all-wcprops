@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/167/trunk/eagle/lbr
+END
+ng.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/9/trunk/eagle/lbr/ng.lbr
+END
+jmanton.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/167/trunk/eagle/lbr/jmanton.lbr
+END
+pinhead-2.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/22/trunk/eagle/lbr/pinhead-2.lbr
+END
+stm32.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/45/trunk/eagle/lbr/stm32.lbr
+END
+SparkFun.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/43/trunk/eagle/lbr/SparkFun.lbr
+END
+avr-4.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/9/trunk/eagle/lbr/avr-4.lbr
+END
+mcp23009.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/164/trunk/eagle/lbr/mcp23009.lbr
+END
+luminary-arm.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/42/trunk/eagle/lbr/luminary-arm.lbr
+END
+atmel-arm.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/42/trunk/eagle/lbr/atmel-arm.lbr
+END
+lpc1xxx-v6.lbr
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/42/trunk/eagle/lbr/lpc1xxx-v6.lbr
+END

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/76/trunk/ARM/software/test
+END
+stm32f10x_conf.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/76/trunk/ARM/software/test/stm32f10x_conf.h
+END
+stm32f10x_flash_md.ld
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/76/trunk/ARM/software/test/stm32f10x_flash_md.ld
+END
+makefile.mk
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/76/trunk/ARM/software/test/makefile.mk
+END
+stm32f10x_it.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/76/trunk/ARM/software/test/stm32f10x_it.c
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/76/trunk/ARM/software/test/main.c
+END
+stm32f10x_it.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/76/trunk/ARM/software/test/stm32f10x_it.h
+END
+README.TXT
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/76/trunk/ARM/software/test/README.TXT
+END
+stm32f10x.h
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/76/trunk/ARM/software/test/stm32f10x.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/76/trunk/ARM/software/test/Makefile
+END

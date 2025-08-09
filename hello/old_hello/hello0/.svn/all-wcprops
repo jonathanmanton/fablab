@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/35/trunk/hello/old_hello/hello0
+END
+hello0.hex
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/35/trunk/hello/old_hello/hello0/hello0.hex
+END
+hello0.brd
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/35/trunk/hello/old_hello/hello0/hello0.brd
+END
+hello0.sch
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/35/trunk/hello/old_hello/hello0/hello0.sch
+END
+hello0.asm
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/35/trunk/hello/old_hello/hello0/hello0.asm
+END

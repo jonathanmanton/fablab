@@ -1,0 +1,15 @@
+Command used to mirror:
+curl --create-dirs "http://fab.cba.mit.edu/about/fab/hello/old/hello1/hello1.{brd,sch,hex,asm}" -o "hello1/hello1.#1"
+
+serial output, programming clip (hello)
+serial output, programming header (hello0)
+serial I/O, programming clip (hello1)
+output: LED (hello2)
+input: step-response (hello3)
+Efe: button+LED (efe)
+A/D: microphone (hello4)
+D/A: speaker (hello5) [needs external power]
+display: LCD (hello7)
+video: RS170 (hello8)
+motion: stepper (hello9)
+

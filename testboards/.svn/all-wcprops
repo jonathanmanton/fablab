@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/49/trunk/testboards
+END
+fabio1.png
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/19/trunk/testboards/fabio1.png
+END
+TQFP48_breakout.png
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/48/trunk/testboards/TQFP48_breakout.png
+END
+hello.light.45.cad
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/19/trunk/testboards/hello.light.45.cad
+END
+TQFP48_breakout.brd
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/49/trunk/testboards/TQFP48_breakout.brd
+END
+hello.light.45_1_64_spd1.rml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/19/trunk/testboards/hello.light.45_1_64_spd1.rml
+END
+TQFP48_breakout.rml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/49/trunk/testboards/TQFP48_breakout.rml
+END
+hello.light.45_1_64_spd4.rml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/19/trunk/testboards/hello.light.45_1_64_spd4.rml
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/20/trunk/testboards/README
+END
+fabio1_1_64_spd4.rml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/19/trunk/testboards/fabio1_1_64_spd4.rml
+END
+TQFP48_breakout.sch
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/47/trunk/testboards/TQFP48_breakout.sch
+END
+blinky3.png
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/19/trunk/testboards/blinky3.png
+END
+blinky3_1_32_spd1.rml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/19/trunk/testboards/blinky3_1_32_spd1.rml
+END
+blinky3_1_32_spd4.rml
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/19/trunk/testboards/blinky3_1_32_spd4.rml
+END

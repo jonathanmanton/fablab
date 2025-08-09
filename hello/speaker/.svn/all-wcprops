@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/35/trunk/hello/speaker
+END
+hello.speaker.45.wave.hex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/35/trunk/hello/speaker/hello.speaker.45.wave.hex
+END
+hello.speaker.45.pwm.hex
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/35/trunk/hello/speaker/hello.speaker.45.pwm.hex
+END
+hello.speaker.45.cad
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/35/trunk/hello/speaker/hello.speaker.45.cad
+END
+hello.speaker.45.wave.asm
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/35/trunk/hello/speaker/hello.speaker.45.wave.asm
+END
+hello.speaker.45.pwm.asm
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/35/trunk/hello/speaker/hello.speaker.45.pwm.asm
+END

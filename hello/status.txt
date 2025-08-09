@@ -1,0 +1,23 @@
+Initial set:
+hello.serial.45.cad
+hello.button.45.cad
+hello.light.45.cad
+hello.mic.44.cad
+hello.mic.44.op_amp.cad
+hello.step.45.cad
+hello.temp.45.cad
+hello.temp_new.brd
+hello.temp_new.png
+hello.temp_new.rml
+hello.temp_new.sch
+
+Everything else:
+h-bridge
+lcd
+rgb
+array
+echo
+io
+speaker
+stepper
+video
